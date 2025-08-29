@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Calculator Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+      <div class="cursor"></div>
+    <div class="cursor-trail"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+ <!--<div class="custom-cursor"></div>-->  
+
+    <div class="bg-blobs">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+    </div>
+
+    <button id="themeToggle" title="Switch to dark mode">🌙</button>
+
+    <header>
+        <h1>CalcZone Hub</h1>
+        <p>One Hub. All calculator. Built with Presicion</p>
+    </header>
+
+    <main>
+        <div class="calculator-grid">
+        <a href="scientific/index.html" class="card">
+            <span class="badge">NEW</span>
+            <h2>Scientific</h2>
+            <p>Advanced math: exponents, logs, roots & more.</p>
+            <span class="open-btn">Open 🧠</span>
+        </a>
+
+        <a href="BMI/index.html" class="card">
+            <h2>BMI</h2>
+            <p>check your body mass index instantly</p>
+            <span class="open-btn">Open →</span>
+        </a>
+
+        <!--More calculator coming soon-->
+        <a href="#" class="card">
+            <h2>Age</h2>
+            <p>Calculate your exact age in years and months</p>
+            <span class="open-btn">Coming soon →</span>
+        </a>
+
+        <a href="Loan/loan.html" class="card">
+            <h2>Loan Calculator</h2>
+            <p>Plan EMI, interest, & repayments easily</p>
+            <span class="open-btn">Coming Soon</span>
+        </a>
+    </div>
+</main>
+
+   
+
+    <footer>
+        Made with efforts By Madiha
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById("themeToggle");
+      
+        function toggleTheme() {
+            const isDark = document.body.classList.toggle("dark");
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            toggleBtn.innerText = isDark ? '🌞' : '🌙';
+            toggleBtn.title = isDark ? 'Switch to light mode' : 'Switch to dark mode';  
+        }
+
+        toggleBtn.onclick = toggleTheme;
+
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark');
+            toggleBtn.innerText = '🌞';
+            toggleBtn.title = 'Switch to light mode';
+        }
+
+        const cursor = document.querySelector('.cursor');
+        const trail = document.querySelector('.cursor-trail');
+
+        window.addEventListener('mousemove', (e) => {
+            cursor.style.left = trail.style.left = `${e.clientX}px`;
+            cursor.style.top = trail.style.top = `${e.clientY}px`;
+        });
+
+        const cursorDot = document.querySelector('.cursor-dot');
+        const cursorRing = document.querySelector('.cursor-ring');
+
+        window.addEventListener('mousemove', (e) => {
+            cursorDot.style.left = `${e.clientX}px`;
+            cursorDot.style.top = `${e.clientY}px`;
+
+            cursorRing.style.left = `${e.clientX}px`;
+            cursorRing.style.top = `${e.clientY}px`;
+        })
+ 
+
+
+    </script>
+</body>
+</html>

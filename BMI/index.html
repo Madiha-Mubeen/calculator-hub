@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="bmi.css">
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+<div class="bg-blobs">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+</div>
+
+<button id="themeToggle">🌙</button>
+   <main>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <p class="tagline">Check your Body Mass Index and understand your health level.</p>
+       
+        <form id="bmiForm">
+           <div class="input-group">
+            <label for="height">Height (cm)</label>
+            <input type="number" id="height" placeholder="e.g. 165" required>
+           </div> 
+           <div class="input-group">
+            <label for="weight">Weight (kg)</label>
+            <input type="number" id="weight" placeholder="e.g. 60" required>
+           </div>
+           <div class="form-buttons">
+                <button type="submit" class="calculate-btn">Calculate BMI</button>
+                <button type="button"  id="resetBtn" class="reset-btn">
+                &#x21bb; Reset
+                </button>
+           </div>
+        </form>
+        <div class="result" id="result"></div>
+        <div class="bmi-pointer" id="bmiPointer">
+            <span class="bmi-label">25.3</span>
+        </div>  
+    </div>
+</main>
+    
+
+    <script src="bmi.js"></script>
+</body>
+</html>

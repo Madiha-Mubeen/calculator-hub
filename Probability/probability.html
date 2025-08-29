@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probability Calculator</title>
+    <link rel="stylesheet" href="probability.css">
+</head>
+<body class="light">
+     
+    <div class="blob-bg">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Probability Calculator</h1>
+            <button id="themeToggle">🌓</button>
+        </header>
+
+        <form id="probForm">
+            <div class="form-group">
+                <label>Total Outcomes
+                    <span class="tooltip" title="Total number of possible outcomes you are calculating probability for">❔</span>
+                </label>
+                <input type="number" id="total" required min="0"/>
+            </div>
+
+            <div class="form-group">
+                <label>Favourable Outcomes
+                    <span class="tooltip" title="Number of outcomes you're calculating probability for">❔</span>
+                </label>
+                <input type="number" id="favourable" required min="0"/>
+            </div>
+
+            <div class="form-group">
+                <label>Result Format</label>
+                <select id="format">
+                    <option value="decimal">decimal</option>
+                    <option value="fraction">Fraction</option>
+                    <option value="percent">Percentage</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn">Calculate</button>
+            <button type="button" class="btn reset" id="resetBtn">🔄 Reset</button>
+        </form>
+
+        <div id="result" class="hidden">
+            <h2>Result:</h2>
+            <p id="probOutput"></p>
+            <canvas id="probChart" width="300" height="300"></canvas>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+    <script src="probability.js"></script>
+    
+</body>
+</html>

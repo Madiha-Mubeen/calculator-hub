@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator - CalcZone Hub</title>
+    <link rel="stylesheet" href="age.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>  
+     <!--Animated Blobs-->
+ 
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+    
+
+    <div class="themeToggle" id="themeToggle">🌞</div>
+
+    <div class="card">
+        <h2>Age</h2>
+        <p>Calculate your exact age in years</p>
+
+        <form id="ageForm">
+            <label for="dob">Select your Date of Birth</label>
+            <input type="date" id="dob" required />
+            <button type="submit" id="calculate">Calculate</button>
+        </form>
+
+        <div id="result" class="result"></div>
+
+     
+    </div>
+
+    <script src="age.js"></script>
+</body>
+</html>

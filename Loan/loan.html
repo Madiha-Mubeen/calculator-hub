@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="loan.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="blob-background">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+        <div class="blob blob4"></div>
+    </div> 
+
+   <div class="container">
+    <div class="header">
+    <h1>Loan Calculator</h1>
+    <button id="themeToggle" title="Toggle Light/Dark Mode">🌙</button>
+   </div> 
+
+   <form id="loanForm">
+    <label for="amount">Loan Amount (₹)</label>
+    <input type="number" id="amount" required />
+
+    <label for="interest">Annual Interest Rate (%)</label>
+    <input type="number" id="interest" step="0.01" required />
+
+    <label for="years">Loan Term (Years)</label>
+    <input type="number" id="years" required />
+
+    <button type="submit">Calculate</button>
+    <button type="button" id="resetBtn" class="reset-btn">Reset</button>
+   </form>
+
+   <div id="result" class="result-section"></div>
+</div>
+
+<div style="text-align:center; margin-top: 1rem;">
+    <label for="chartType"><strong>Select Chart Type:</strong></label>
+    <select id="chartType">
+        <option value="doughnut">Doughnut</option>
+        <option value="bar">Bar</option>
+        <option value="pie">Pie</option>
+    </select>
+</div>
+ 
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
+
+
+<script src="loan.js" defer></script>
+</body>
+</html>
