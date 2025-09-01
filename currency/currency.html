@@ -48,7 +48,7 @@
         .container {
             min-height: 100vh;
         }
-        .container h1 {
+        .container h1, h2 {
             margin: 23px 0;
         }
         .container form {
@@ -56,18 +56,27 @@
             flex-direction: column;
         }
         .container form input[type='number'], select, label {
-            font-size: 25px;
+            font-size: 20px;
             width: 23vw;
             margin-bottom: 23px;
         }
         .btn {
             width: 144px;
-            padding: 12px 23px;
+            padding: 5px 10px;
             font-size: 23px;
             background: #ec5b93;
             color: antiquewhite;
             border-radius: 15px;
             cursor: pointer;
+        }
+        .output {
+            display: none;
+        }
+        .output table {
+            width: 50vw;
+            text-align: center;
+            border: 2px solid grey;
+            font-size: 20px;
         }
         footer {
             text-align: center;
@@ -96,7 +105,24 @@
             </select>
             <button type="submit" class="btn">Submit</button>
             
+           
         </form>
+            <div class="output">
+                <table>
+                    <h2>Below is Converted values in different currencies</h2>
+                    <thead>
+                        <tr>
+                            <th>Currency</th>
+                            <th>Currency Code </th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                    
+                </table>
+            </div>
     </div>
     
     <footer>
