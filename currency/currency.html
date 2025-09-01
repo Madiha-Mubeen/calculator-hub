@@ -8,9 +8,100 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Bitcount:wght@100..900&family=DM+Serif+Text:ital@0;1&family=Griffy&family=Nosifer&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+NSW:wght@100..400&family=Rouge+Script&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            font-weight: 900;
+            display: flex;
+            font-size: 21px;
+            background: #e1d2e6;
+            padding: 23px;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: black;
+            transition: all;
+            transition-duration: 650ms;
+        }
+        nav li a:hover {
+            text-decoration: none;
+            color: #a96af0;
+        }
+        div.logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 23px;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul {
+            display: flex;
+        }
+        .container {
+            min-height: 100vh;
+        }
+        .container h1 {
+            margin: 23px 0;
+        }
+        .container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .container form input[type='number'], select, label {
+            font-size: 25px;
+            width: 23vw;
+            margin-bottom: 23px;
+        }
+        .btn {
+            width: 144px;
+            padding: 12px 23px;
+            font-size: 23px;
+            background: #ec5b93;
+            color: antiquewhite;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+    <nav>
+        <div class="logo">CurrencyConverter - CalcZone</div>
+        <ul>
+            <li><a href="/home">Home Page</a></li>
+            <li><a href="/about">About Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Select the Currency to Convert</h1>
+        <form action="/action.php" method="get">
+            <label for="quantity">Choose your quantity: </label>
+            <input type="number" name="quantity" min="1" max="10">
+            <label for="currency">Choose your currency to convert: </label>
+            <select name="currency">
+                <option value="INR">Indian Rupee</option>
+                <option value="USD">US Dollar</option>
+                <option value="EUR">Euro</option>
+            </select>
+            <button type="submit" class="btn">Submit</button>
+            
+        </form>
+    </div>
     
+    <footer>
+         Copyright &copy; Built by Madiha Mubeen
+    </footer>
 
     <script src="currency.js"></script>
 
