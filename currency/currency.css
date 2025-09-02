@@ -2,3 +2,101 @@ body {
     background: linear-gradient(135deg, #8ec5fc, #e0c3fc);
 }
 
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    font-family: Arial, sans-serif;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container form label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container form input[type='number'], .container form select {
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    width: fit-content;
+    padding: 12px 20px;
+    font-size: 18px;
+    background: #ec5b93;
+    color: antiquewhite;
+    border-radius: 13px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #d84c7a;
+}
+
+.output {
+    display: none;
+    margin-top: 30px;
+}
+
+.output table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 18px;
+}
+
+.output table th, .output table td {
+    padding: 12px;
+    border: 1px solid grey;
+}
+
+.output table th {
+    background-color: #f4f4f4;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 16px;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav ul {
+        justify-content: center;
+    }
+    .logo {
+        width: 180px;
+        height: 60px;
+    }
+    .container form input[type='number'], .container form select {
+        width: 100%;
+    }
+}
