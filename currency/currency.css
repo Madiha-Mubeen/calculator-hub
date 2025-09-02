@@ -1,20 +1,55 @@
 body {
-    background: linear-gradient(135deg, #8ec5fc, #e0c3fc);
+    background: linear-gradient(135deg, #f5c0c0, #a1c4fd);
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
+    position: relative;
     max-width: 700px;
-    margin: 40px auto;
+    margin: 60px auto;
     background-color: #ffffff;
-    padding: 30px 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
     font-family: Arial, sans-serif;
+    color: #fff;
+    backdrop-filter: blur(15px);
+}
+
+.container::before, .container::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    z-index: -1;
+}
+
+.container::before {
+    width: 200px;
+    height: 200px;
+    background: #ff6ec7;
+    top: -80px;
+    left: -80px;
+}
+
+.container::after {
+    width: 300px;
+    height: 300px;
+    background: #6ed4ff;
+    bottom: -100px;
+    right: -100px;
 }
 
 .container h1 {
     text-align: center;
     margin-bottom: 30px;
+    font-size: 28px;
+    color: #d48383;
+    text-shadow: 1px 1px 8px rgba(0,0,0,0.4);
 }
 
 .container form {
@@ -26,30 +61,36 @@ body {
 .container form label {
     font-size: 18px;
     font-weight: bold;
+    color: #cf9fc9;
 }
 
 .container form input[type='number'], .container form select {
     font-size: 18px;
-    padding: 10px;
+    padding: 12px;
     width: 100%;
-    border-radius: 8px;
-    border: 1px solid #ccc;
+    border-radius: 12px;
+    outline: none;
+    background: rgba(148, 72, 72, 0.2);
+    border: none;
+    color: #c04f4f;
+}
+
+.container form input::placeholder {
+    color: rgba(255,255,255,0.7);
 }
 
 .btn {
-    width: fit-content;
     padding: 12px 20px;
     font-size: 18px;
-    background: #ec5b93;
+    background: linear-gradient(45deg, #ff6ec7, #6ed4ff);
     color: antiquewhite;
     border-radius: 13px;
     cursor: pointer;
-    border: none;
-    transition: background 0.3s;
+    transition: all 0.3s ease;
 }
 
 .btn:hover {
-    background: #d84c7a;
+    background: linear-gradient(45deg, #6ed4ff, #ff6ec7);
 }
 
 .output {
@@ -62,11 +103,12 @@ body {
     border-collapse: collapse;
     text-align: center;
     font-size: 18px;
+    color: #ca3a6a;
 }
 
 .output table th, .output table td {
     padding: 12px;
-    border: 1px solid grey;
+    border: 1px solid rgb(185, 92, 157);
 }
 
 .output table th {
