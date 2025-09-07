@@ -15,8 +15,8 @@
 
 body {
     font-family: 'Condiment', sans-serif;
-    background: linear-gradient(135deg, #e0f7fa, #fdfcfb);
-    background-image: url('ccc.jpeg');
+    background: #e9d2a8;
+  /*  background-image: url('ccc.jpeg');*/
     background-size: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -27,7 +27,8 @@ body {
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    color: var(--text-light);
+    color: #88800e;
+    font-size: 1.2rem;
     text-align: center;
     transition: background 0.4s ease, color 0.4s ease;
     animation: bgShift 15s ease infinite;
@@ -45,20 +46,29 @@ body.dark {
 
 h1 {
     font-size: 2.9rem;
-    background: linear-gradient(to right, #8eb0f8, #2e2a6d);
+    background: linear-gradient(to right, #795f30, #df9c5e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-h1.dark {
+body.dark h1 {
     font-size: 3rem;
-    background: linear-gradient(to right, #e0e2e6, #bb8bd1);
-}
+    background: linear-gradient(to right, #64688f, #034353);
+    -webkit-background-clip: text;
+    -webkit-text-clip: transparent;
+ } 
+ 
+ body.dark .card {
+    color: #1c2852;
+ }
+
+ 
+ /*
 .tagline {
     font-size: 5rem;
     opacity: 0.8;
     margin-top: 0.5rem;
     color: var(--text-light);
-}
+} */
 
 body.dark .tagline {
     color: var(--text-dark);
@@ -94,7 +104,7 @@ a {
 
 .card {
     position: relative;
-    background: var(--card-bg-light);
+    background: #885f3a;
     backdrop-filter: blur(20px);
     border-radius: 20px;
     padding: 1.5rem;
@@ -107,14 +117,14 @@ a {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
 }
-
+/*
 .card:hover, 
 .card:focus {
     transform: translateY(-6px) cale(1.02);
     box-shadow: 0 0 30px rgba(94, 234, 212, 0.3);
     outline: 2px solid #3b82f6;
 }
-
+*/
 .card::before {
     content: '';
     position: absolute;
@@ -122,12 +132,12 @@ a {
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(45deg, #60a5fa, #9333ea, #f59e0b);
+   /* background: linear-gradient(45deg, #a4ebcd, #f5a4b1, #5e0606); */
     z-index: -1;
     filter: blur(10px);
     animation: borderPulse 6s infinte linear;
 }
-
+ 
 @keyframes borderPulse {
     0% {
         filter: blur(10px) hue-rotate(0deg);
@@ -142,15 +152,15 @@ a {
 }
 
 .card p {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     opacity: 0.85;
     margin-bottom: 1rem;
 }
 
 .open-btn {
     font-weight: bold;
-    color: #3b82f6;
-    font-size: 0.9rem;
+    color: #0a2c64;
+    font-size: 1.2rem;
 }
 
 body.dark .card {
@@ -272,9 +282,8 @@ body.dark {
         transform: scale(1.2)  translate(50px, -50px);
     }
 }
- 
+ */
 .card {
-    background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
@@ -296,12 +305,12 @@ body.dark {
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(45deg, #60a5fa, #9333ea, #f59e0b);
+   /* background: linear-gradient(45deg, #77a79c, #e08686, #b0ebab); */
     z-index: -1;
     filter: blur(10px);
     animation: borderPulse 6s infinite linear;
 }
-*/
+
 @keyframes borderPulse {
     0% {
         filter: blur(10px) hue-rotate(0deg);
@@ -328,7 +337,7 @@ body.dark {
 
  
 .tagline {
-    font-size: 1.5rem;
+    font-size: 10rem;
     margin-top: 0.5rem;
     font-weight: 500;
     background: linear-gradient(to right, #3b82f6, #6366f1);
