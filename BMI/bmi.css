@@ -34,8 +34,7 @@ body {
 }
 
 body.dark {
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    color: var(--text-dark);
+    background: #011d08;
 }
 
 @keyframes bgShift {
@@ -68,7 +67,7 @@ body.dark {
 }
 
 body.dark #themeToggle {
-    background: #334155;
+    background: #455533;
 }
 
 /*Container*/
@@ -83,6 +82,10 @@ body.dark #themeToggle {
     width: 100%;
     color:#142b04;
 } 
+
+body.dark .container {
+    color: #0b6325;
+}
 
 .container h1 {
     font-size: 2rem;
