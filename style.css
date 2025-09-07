@@ -2,7 +2,7 @@
     --bg-light: #f3f4f6;
     --bg-dark: #0f172a;
     --text-light: #1e293b;
-    --text-dark: ##f8fafc;
+    --text-dark: #f8fafc;
     --card-bg-light: rgba(255, 255, 255, 0.6);
     --card--bg-black: rgba(30,41,59,0.4);
 }
@@ -14,14 +14,14 @@
 }
 
 body {
-    font-family:'Poppins', 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Condiment', sans-serif;
     background: linear-gradient(135deg, #e0f7fa, #fdfcfb);
     background-image: url('ccc.jpeg');
     background-size: center;
-    background-size: cover;
-    background-repeat: n0-repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
     margin: 0;
-    min-height: 100hv;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,27 +31,30 @@ body {
     text-align: center;
     transition: background 0.4s ease, color 0.4s ease;
     animation: bgShift 15s ease infinite;
-    cursor: url('assets/sparkle-cursor.png'), auto;
+    cursor: auto;
 }
 
 /* Dark Mode */
 body.dark {
     background: linear-gradient(135deg, #0f172a, #1e293b);
     color: var(--text-dark);
-    background-image: url('ccb1.jpg');
-    background-size: fit;
+    background-image: url('cbc.webp');
+    background-size: cover;
     animation: bgShift 15s ease infinite;
 }
 
 h1 {
-    font-size: 2.5rem;
-    background: linear-gradient(to right, #2563eb, #4f46e5);
+    font-size: 2.9rem;
+    background: linear-gradient(to right, #8eb0f8, #2e2a6d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+h1.dark {
+    font-size: 3rem;
+    background: linear-gradient(to right, #e0e2e6, #bb8bd1);
+}
 .tagline {
-    font-size: 1.1rem;
+    font-size: 5rem;
     opacity: 0.8;
     margin-top: 0.5rem;
     color: var(--text-light);
@@ -59,6 +62,7 @@ h1 {
 
 body.dark .tagline {
     color: var(--text-dark);
+    font-size: 10rem;
 }
 
 .tagline::after {
@@ -207,7 +211,7 @@ body.dark {
     }
 }
 
-
+/*
 .bg-blobs {
     position: fixed;
     top: 0;
@@ -297,7 +301,7 @@ body.dark {
     filter: blur(10px);
     animation: borderPulse 6s infinite linear;
 }
-
+*/
 @keyframes borderPulse {
     0% {
         filter: blur(10px) hue-rotate(0deg);
@@ -324,7 +328,7 @@ body.dark {
 
  
 .tagline {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     margin-top: 0.5rem;
     font-weight: 500;
     background: linear-gradient(to right, #3b82f6, #6366f1);
