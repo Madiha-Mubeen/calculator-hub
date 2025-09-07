@@ -3,18 +3,11 @@
     --text-light: #222;
     --bg-dark: #0f0f2b;
     --text-dark: #f9f9f9;
-
-    --card-glow-light: rgba(0, 200, 255, 0.6);
-    --card-glow-dark: rgba(255, 0, 200, 0.5);
-
-    --primary: #00c9ff;
-    --secondary: #92fe9d;
-    --accent: #ff00cc;
 }
 
 body {
     font-family: "Playfair Display", serif;
-    background: var(--bg-dark);
+    background: rgb(131, 60, 60);
     color: var(--text-dark);
     transition: background 0.4s, color 0.4s;
     display: flex;
@@ -30,13 +23,12 @@ body {
 }
 .card {
     position: relative;
-    width: 50%;
-    background: linear-gradient(135deg, #ff00cc, #3333ff);
+    width: 70%;
+    background: rgb(247, 173, 185);
     padding: 2rem;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 0 0 25px var(--card-glow-dark);
-    color: #000;
+    color: #500b0b;
     z-index: 1;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -44,7 +36,6 @@ body {
 
 .card:hover {
     transform: scale(1.03);
-    box-shadow: 0 0 40px var(--accent);
 }
 
 .card h2 {
@@ -59,16 +50,18 @@ body {
 input[type="date"] {
     padding: 0.5rem;
     border-radius: 10px;
-    border: none;
+    border: 22px;
     width: 100%;
     margin-bottom: 1rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 button {
     padding: 0.6rem 1.2rem;
-    background-color: #00f5c4;
+    background-color: #9e2c35;
+    color: rgb(245, 196, 204);
     border: none;
+    font-family: 'Playfair Display', sans-serif;
     border-radius: 10px;
     cursor: pointer;
     font-size: 1rem;
@@ -77,7 +70,7 @@ button {
 
 button:hover {
     transform: scale(1.05);
-    background-color: #00e0b0;
+    background-color: #5a0715;
 }
 
 form label {
@@ -88,59 +81,9 @@ form label {
 }
 
 .result {
-    margin-top: 1rem;
+    font-size: 1.2rem;
+    margin-top: 1.3rem;
     font-weight: bold;
-}
-
-.blob {
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.7;
-    z-index: -1;
-    filter: blur(30px);
-}
-
-.blob1 {
-    width: 160px;
-    height: 160px;
-    background: var(--primary);
-    top: -40px;
-    left: -50px;
-    animation: move1 7s ease-in-out infinite alternate;
-}
-
-.blob2 {
-    width: 120px;
-    height: 120px;
-    background: var(--secondary);
-    bottom: -30px;
-    right: -40px;
-    animation: move2 6s ease-in-out infinite alternate;
-}
-
-.blob3 {
-    width: 100px;
-    height: 100px;
-    background: var(--accent);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: move3 8s ease-in-out infinite alternate;
-}
-
-@keyframes move1 {
-    0% { transform: translate(0,0);}
-    100% { transform: translate(20px, 30px);}
-}
-
-@keyframes move2 {
-    0% { transform: translate(0, 0);}
-    100% { transform: translate(-20px, -25px);}
-}
-
-@keyframes move3 {
-    0% { transform: translate(-50%, -50%) scale(1);}
-    100% {transform: translate(-45%, -55%) scale(1.1);}
 }
 
 /* Theme toggle button */
@@ -151,14 +94,6 @@ form label {
     cursor: pointer;
     font-size: 1.4rem;
     z-index: 10;
-}
-
-@media (max-width: 500px) {
-    .blob1, .blob2, .blob3 {
-        width: 80px;
-        height: 80px;
-        filter: blur(20px);
-    }
 }
 
 input[type="date"] {

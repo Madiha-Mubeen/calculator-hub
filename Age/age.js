@@ -6,21 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const resultDiv = document.querySelector(".result");
     const form = document.getElementById("ageForm");
 
-    let isDarkMode = true;
-
-    themeToggle.addEventListener("click", () => {
-        isDarkMode = !isDarkMode;
-
-        if (isDarkMode) {
-            body.style.background = getComputedStyle(document.documentElement).getPropertyValue('--bg-dark');
-            body.style.color = getComputedStyle(document.documentElement).getPropertyValue('--text-dark');
-            card.style.boxShadow = `0 0 25px ${getComputedStyle(document.documentElement).getPropertyValue('--card-glow-dark')}`;
-        } else {
-            body.style.background = getComputedStyle(document.documentElement).getPropertyValue('--bg-light');
-            body.style.color = getComputedStyle(document.documentElement).getPropertyValue('--text-light');
-            card.style.boxShadow = `0 0 25px ${getComputedStyle(document.documentElement).getPropertyValue('--card-glow-light')}`;
-        }
-    });
 
     form.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -46,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
             months += 12;
         }
 
-        resultDiv.textContent = `You are ${years} years, ${months} months, and ${days} days old.`;
+        resultDiv.textContent = `Oh great! you are ${years} years, ${months} months, and ${days} days old.`;
 
     });
 });
