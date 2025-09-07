@@ -16,7 +16,7 @@
 body {
     font-family:'Poppins', 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #e0f7fa, #fdfcfb);
-    background-image: url('assests/bg-grid.svg');
+    background-image: url('ccc.jpeg');
     background-size: center;
     background-size: cover;
     background-repeat: n0-repeat;
@@ -38,7 +38,8 @@ body {
 body.dark {
     background: linear-gradient(135deg, #0f172a, #1e293b);
     color: var(--text-dark);
-    background-size: 400% 400%;
+    background-image: url('ccb1.jpg');
+    background-size: fit;
     animation: bgShift 15s ease infinite;
 }
 
@@ -187,12 +188,12 @@ button:hover {
     cursor: grab;
     transform: scale(1.03);
 }
-
+/*
 body.dark {
     background: linear-gradient(135deg, #0f172a, #1e293b);
     background-size: 400% 400%;
     animation: bgShift 15s ease infinite;
-}
+} */
 
 @keyframes bgShift {
     0% {
