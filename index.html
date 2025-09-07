@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Condiment&family=Ephesis&family=Griffy&family=Meow+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Potta+One&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -22,11 +26,14 @@
         <div class="blob blob3"></div>
     </div>
 
-    <button id="themeToggle" title="Switch to dark mode">🌙</button>
+    <button id="themeToggle" title="Switch to dark mode">different mode</button>
 
+    <nav>
+        
+    </nav>
     <header>
         <h1>CalcZone Hub</h1>
-        <p>One Hub. All calculator. Built with Presicion</p>
+        <p>One Hub. Most type of calculator. Built with Presicion</p>
     </header>
 
     <main>
@@ -34,38 +41,38 @@
         <a href="scientific/index.html" class="card">
             <h2>Scientific</h2>
             <p>Advanced math: exponents, logs, roots & more.</p>
-            <span class="open-btn">Open</span>
+            <span class="open-btn">Click to open</span>
         </a>
 
         <a href="BMI/index.html" class="card">
             <h2>BMI</h2>
             <p>check your body mass index instantly</p>
-            <span class="open-btn">Open</span>
+            <span class="open-btn">Click to open</span>
         </a>
 
         <!--More calculator coming soon-->
         <a href="Age/age.html" class="card">
             <h2>Age</h2>
             <p>Calculate your exact age in years and months</p>
-            <span class="open-btn">Open</span>
+            <span class="open-btn">Click to open</span>
         </a>
 
         <a href="Loan/loan.html" class="card">
             <h2>Loan Calculator</h2>
             <p>Plan EMI, interest, & repayments easily</p>
-            <span class="open-btn">Open</span>
+            <span class="open-btn">Click to open</span>
         </a>
 
         <a href="Carbon-Footprint/carbon.html" class="card">
             <h2>Carbon Footprint</h2>
             <p>Know how much carbon you emit </p>
-            <span class="open-btn">Open</span>
+            <span class="open-btn">Click to open</span>
         </a>
 
         <a href="Graphing/graphing.html" class="card">
             <h2>Graph Plot</h2>
             <p>Add value and the graph is ready</p>
-            <span class="open-btn">Open</span>
+            <span class="open-btn">Click to open</span>
         </a>
 
         <a href="Probability/probability.html" class="card">
@@ -100,7 +107,7 @@
         function toggleTheme() {
             const isDark = document.body.classList.toggle("dark");
             localStorage.setItem('theme', isDark ? 'dark' : 'light');
-            toggleBtn.innerText = isDark ? '🌞' : '🌙';
+            toggleBtn.innerText = isDark ? 'Different mode' : 'Back to different mode';
             toggleBtn.title = isDark ? 'Switch to light mode' : 'Switch to dark mode';  
         }
 
@@ -108,7 +115,7 @@
 
         if (localStorage.getItem('theme') === 'dark') {
             document.body.classList.add('dark');
-            toggleBtn.innerText = '🌞';
+            toggleBtn.innerText = 'Back to different mode';
             toggleBtn.title = 'Switch to light mode';
         }
 

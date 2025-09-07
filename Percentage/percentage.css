@@ -18,7 +18,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     position: sticky;
@@ -46,22 +46,17 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff6ec7;
+    color: #ffeb3b;
 }
 
 .container {
     max-width: 600px;
-    width: 90%;
     margin: 40px auto;
     padding: 30px;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    color: #fff;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     text-align: center;
-    position: relative;
-    overflow: hidden;
 }
 
 .container::before, .container::after {
@@ -142,7 +137,7 @@ input::placeholder {
 footer {
     text-align: center;
     padding: 15px;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.15);
     color: #fff;
     font-size: 14px;
     backdrop-filter: blur(10px);

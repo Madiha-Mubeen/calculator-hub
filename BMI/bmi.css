@@ -137,6 +137,12 @@ button[type="submit"] {
     transition: background 0.3s;
 }
 
+body.dark button[type="submit"] {
+    background: #0d3605;
+}
+body.dark button[type="submit"]:hover {
+    background: #1b5c0b;
+}
 button[type="submit"]:hover {
     background: yellowgreen;
 }
@@ -436,13 +442,13 @@ body.dark .bmi-advice {
 }
 
 body.dark .reset-btn {
-    background-color: transparent;
+    background-color: rgb(4, 49, 4);
     color: #63b3ed;
     border-color: #63b3ed;
 }
 
 body.dark .reset-btn:hover {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: #267014;
 }
 
 .form-buttons {
