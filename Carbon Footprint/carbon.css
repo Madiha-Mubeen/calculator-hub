@@ -4,9 +4,6 @@
     --card-bg: #ffffff;
     --text: #222;
     --primary: #28a745;
-    --blob1: #00c9ff;
-    --blob2: #92fe9d;
-    --blob3: #fcb045;
 }
 
 * {
@@ -17,7 +14,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: var(--bg);
+    background-color: rgb(139, 180, 204);
     color: var(--text);
     min-height: 100vh;
     overflow-x: hidden;
@@ -27,6 +24,7 @@ body {
 /* Main Layout */
 .container {
     display: flex;
+
     justify-content: center;
     align-items: center;
     padding: 2rem;
@@ -38,9 +36,9 @@ body {
 }
 
 .calculator-card {
-    background-color: var(--card-bg);
+    background-color: rgb(132, 132, 228);
     padding: 2rem;
-    border-radius: 16px;
+    border-radius: 27px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
     max-width: 480px;
     position: relative;
@@ -77,14 +75,14 @@ body {
 input,
 select {
     padding: 0.6rem 0.75rem;
-    border: 1px solid #ccc;
+    border: 1px solid #749fc2;
     border-radius: 8px;
     font-size: 1rem;
     width: 100%;
 }
 
 .calculate-btn {
-    background-color: var(--primary);
+    background-color: rgb(66, 66, 124);
     color: #fff;
     padding: 0.75rem;
     font-weight: 600;
@@ -96,7 +94,7 @@ select {
 }
 
 .calculate-btn:hover {
-    background-color: #218838;
+    background-color: #3a4c99;
 }
 
 /* Result Box */
