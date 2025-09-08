@@ -50,12 +50,13 @@ body.dark {
     position: absolute;
     top: 20px;
     right: 20px;
-    background: var(--primary);
+    background: rgb(72, 136, 47);
     color: white;
     border: none;
     padding: 10px 14px;
     border-radius: 8px;
     font-size: 1rem;
+    font-family:'Courier New', Courier, monospace;
     cursor: pointer;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
     transition: background 0.3s;
@@ -63,7 +64,7 @@ body.dark {
 }
 
 #themeToggle:hover {
-    background: var(--primary-dark);
+    background: rgb(2, 95, 2);
 }
 
 body.dark #themeToggle {
@@ -154,13 +155,13 @@ button[type="submit"]:hover {
     background: #f0fdfa;
     padding: 1rem;
     border-radius: 10px;
-    color: #0f766e;
+    color: #0f7631;
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 
 body.dark .result {
-    background: #1e293b;
-    color: #a5f3fc;
+    background: #25471d;
+    color: #9ae976;
 }
 
 .bmi-bar {
@@ -210,7 +211,7 @@ body.dark .result {
 }
 
 body.dark .bmi-advice {
-    color: #e0f2fe;
+    color: #13501d;
 }
 
 .bar-segment.underweight {
@@ -282,6 +283,9 @@ dark.dark .bmi-pointer .bmi-label {
     font-family:'Segoe UI', sans-serif;
 }
 
+body.dark .bmi-result {
+    color: rgb(96, 133, 10);
+}
 .bmi-result p {
     margin: 10px 0;
     font-size: 1rem;
@@ -350,6 +354,10 @@ dark.dark .bmi-pointer .bmi-label {
     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
+body.dark .bmi-history {
+    color: green;
+}
+
 .bmi-history h3 {
     margin-bottom: 12px;
     font-size: 1.2rem;
@@ -369,6 +377,10 @@ dark.dark .bmi-pointer .bmi-label {
     color: #17a2b8;
     font-weight: 500;
     margin-left: 10px;
+}
+
+body.dark .bmi-history .value {
+    color: red;
 }
 
 /*Buttons*/
@@ -413,7 +425,7 @@ body.dark .bmi-advice {
 }
 
 body.dark .bmi-advice {
-    color: #e2e8f0;
+    color: #416349;
 }
 
 /*Stylish Reset Button*/
@@ -443,8 +455,8 @@ body.dark .bmi-advice {
 
 body.dark .reset-btn {
     background-color: rgb(4, 49, 4);
-    color: #63b3ed;
-    border-color: #63b3ed;
+    color: #bbe9bb;
+    border-color: #83ed63;
 }
 
 body.dark .reset-btn:hover {
