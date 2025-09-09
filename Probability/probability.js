@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     labels: ["Favourable", "Other Outcomes"],
                     datasets: [{
                         data: [fav, notFav],
-                        backgroundColor: ["#40dfd4ff", "#92e14dff"],
+                        backgroundColor: ["#fd0543ff", "#efff0aff"],
                         borderColor: "#fff",
                         borderWidth: 2
                     }]
@@ -121,13 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         }
 
-        // Cursor-Based Blob Parallax Movement
-        document.addEventListener("mousemove", (e) => {
-            const x = (e.clientX / window.innerWidth - 0.5) *100;
-            const y = (e.clientY / window.innerHeight - 0.5) * 100;
-            document.querySelectorAll(".blob").forEach(blob => {
-                blob.style.transform = `translate(${x}px, ${y}px)`;
-            });
-        });
+        
+    
  
 });
