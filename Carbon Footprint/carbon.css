@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Bitcount+Prop+Single:wght@100..900&family=Bitcount:wght@100..900&family=DM+Serif+Text:ital@0;1&family=Griffy&family=Kings&family=Nosifer&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+NSW:wght@100..400&family=Quintessential&family=Rouge+Script&display=swap');
+ 
 /* Root & Reset */
 :root {
     --bg: #f4f7fa;
@@ -13,7 +16,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Playwrite AU NSW', sans-serif;
     background-color: rgb(139, 180, 204);
     color: var(--text);
     min-height: 100vh;
@@ -24,7 +27,6 @@ body {
 /* Main Layout */
 .container {
     display: flex;
-
     justify-content: center;
     align-items: center;
     padding: 2rem;
@@ -50,13 +52,14 @@ body {
     font-weight: 600;
     text-align: center;
     margin-bottom: 0.25rem;
+    color: rgb(4, 4, 102);
 }
 
 .subtitle {
     font-size: 1rem;
     text-align: center;
     margin-bottom: 1.5rem;
-    color: #555;
+    background: #426ea8;
 }
 
 /* Form */
@@ -64,8 +67,16 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    align-items: center;
+    justify-content: center;
 }
 
+form input, form select, form button {
+    width: 90%;
+    max-width: 300px;
+    margin: 9px 1px;
+    text-align: center;
+}
 .form-group label {
     font-weight: 500;
     margin-bottom: 0.25rem;
@@ -74,19 +85,24 @@ body {
 
 input,
 select {
-    padding: 0.6rem 0.75rem;
-    border: 1px solid #749fc2;
-    border-radius: 8px;
+    padding: 0.9rem 1.75rem;
+    border: 1px solid #104b7c;
+    border-radius: 20px;
     font-size: 1rem;
-    width: 100%;
+    width: 70%;
+    text-align: center;
+    align-items: center;
+    color: blue;
+    background: rgb(219, 219, 224);
 }
 
 .calculate-btn {
     background-color: rgb(66, 66, 124);
-    color: #fff;
+    color: #a6c1ce;
     padding: 0.75rem;
-    font-weight: 600;
-    font-size: 1rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+    font-family: 'Playwrite AU NSW', sans-serif;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -117,7 +133,7 @@ select {
 }
 
 body.dark .subtitle {
-    color: #ccc;
+    color: #93d0db;
 }
 
 .result-box .result-text {
@@ -127,61 +143,6 @@ body.dark .subtitle {
 
 .result-box.show {
     display: block;
-}
-
-/* Blobs */
-.blob {
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.45;
-    z-index: 0;
-    top: 0;
-    left: 0;
-    animation: float 20s ease-oin-out infinite;
-    filter: blur(50px);
-    transition: transform 0.3s ease;
-}
-
-.blob-bottom-right {
-    bottom: 0;
-    right: 0;
-    transform: translate(50%, 50%);
-}
-.blob1 {
-    background: var(--blob1);
-    width: 250px;
-    height: 250px;
-    bottom: -50px;
-    right: -50px;
-    animation-delay: 5s;
-}
-
-.blob2 {
-    background: var(--blob2);
-    width: 250px;
-    height: 250px;
-    bottom: -80px;
-    right: -80px;
-    animation-delay: 5s;
-}
-
-.blob3 {
-    background: var(--blob3);
-    width: 200px;
-    height: 200px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation-delay: 10s;
-}
-
-@keyframes float {
-    0%, 100% {
-        translate: translate(50%, 50%) scale(1);
-    }
-    50% {
-        transform: translateY(50%, 50%) scale(1.1);
-    }
 }
 
 /* Responsive */
@@ -202,10 +163,7 @@ body.dark {
     --bg: #1a1a1a;
     --card-bg: #262626;
     --text: #f5f5f5;
-    --primary: #34d399;
-    --blob1: #0ea5e9;
-    --blob2: #4ade80;
-    --blob3: #facc15;
+    --primary: #3734d3;
 }
 
 .toggle-container {
@@ -216,28 +174,28 @@ body.dark {
 
 #themeToggle {
     background-color: transparent;
-    border: 2px solid var(--primary);
-    padding: 0.4rem 1rem;
-    border-radius: 20px;
+    border: 2px solid rgb(59, 59, 143);
+    border-radius: 6px;
     font-size: 0.9rem;
     cursor: pointer;
     transition: background 0.3s, color 0.3s;
     color: var(--text);
+    padding: 10px 10px;
 }
 
 #themeToggle:hover {
-    background-color: var(--primary);
-    color: #fff;
+    background-color: rgb(130, 130, 233);
+    color: #e3eef7;
 }
 
 /* Dark mode basics */
 body.dark {
-    background-color: #121212;
+    background-color: #271b5c;
     color: #e0e0e0;
 }
 
 body.dark .result {
-    color: #ffffff;
+    color: #cae3ec;
 }
 /* To hide and show results */
 #result {
@@ -251,5 +209,5 @@ body.dark .result {
 
 .result-box {
     background-color: var(--card);
-    color: #1a1a1a;
+    color: #140441;
 }
