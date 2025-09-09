@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 labels: ["Principal", "Interest"],
                 datasets: [{
                     data: [amount, totalInterest],
-                    backgroundColor: ["#007bff", "#ff6384"],
+                    backgroundColor: ["#d2dd6bff", "#ff6384"],
                     borderWidth: 1
                 }]
             },
@@ -196,27 +196,6 @@ function exportLoanCSV() {
 
     URL.revokeObjectURL(url);
 }
- /*   
-document.addEventListener("mousemove", function (e) {
-    const blobs = document.querySelectorAll(".blob");
-    blobs.forEach((blob, index) => {
-        const speed = (index + 1) * 0.02;
-        const x = (window.innerWidth - e.pageX * speed);
-        const y = (window.innerHeight - e.pageY * speed);
-        blob.style.transform = `translate(${x}px, ${y}px) scale(1.2)`;
-
-    });
-}); */
-
-document.addEventListener("mousemove", function (e) {
-    const blobs = document.querySelectorAll(".blob");
-    blobs.forEach((blob, index) => {
-        const speed = (index + 1) * 2;
-        const x = (window.innerWidth / 2 - e.pageX) * speed;
-        const y = (window.innerHeight / 2 - e.pageY) * speed;
-        blob.style.transform = `translate(${x}px, ${y}px) scale(1.2)`;
-    });
-});
 
 document.addEventListener("click", function (e) {
     if (e.target && e.target.id === "downloadChart") {
