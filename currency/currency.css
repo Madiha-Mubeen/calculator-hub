@@ -1,7 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Bitcount+Prop+Single:wght@100..900&family=Bitcount:wght@100..900&family=DM+Serif+Text:ital@0;1&family=Griffy&family=Kings&family=Nosifer&family=Petit+Formal+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+NSW:wght@100..400&family=Quintessential&family=Rouge+Script&display=swap');
+
 body {
-    background: linear-gradient(135deg, #f5c0c0, #a1c4fd);
+    background: linear-gradient(135deg, #c90a0a, #0652cc);
     min-height: 100vh;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Petit Formal Script', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,40 +18,17 @@ body {
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-    font-family: Arial, sans-serif;
+    font-family: 'Petit Formal Script', sans-serif;
     color: #fff;
     backdrop-filter: blur(15px);
-}
-
-.container::before, .container::after {
-    content: '';
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(100px);
-    z-index: -1;
-}
-
-.container::before {
-    width: 200px;
-    height: 200px;
-    background: #ff6ec7;
-    top: -80px;
-    left: -80px;
-}
-
-.container::after {
-    width: 300px;
-    height: 300px;
-    background: #6ed4ff;
-    bottom: -100px;
-    right: -100px;
 }
 
 .container h1 {
     text-align: center;
     margin-bottom: 30px;
     font-size: 28px;
-    color: #d48383;
+    color: #eb5858;
+    background: pink;
     text-shadow: 1px 1px 8px rgba(0,0,0,0.4);
 }
 
@@ -59,38 +39,43 @@ body {
 }
 
 .container form label {
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: bold;
-    color: #cf9fc9;
+    color: #6b065e;
+    background: rgb(218, 141, 218);
 }
 
 .container form input[type='number'], .container form select {
     font-size: 18px;
+    font-family: 'Petit Formal Script', sans-erif, 'Times New Roman';
+    font-weight: 600;
     padding: 12px;
-    width: 100%;
-    border-radius: 12px;
+    width: 50%;
+    border-radius: 20px;
     outline: none;
     background: rgba(148, 72, 72, 0.2);
     border: none;
-    color: #c04f4f;
+    color: #8d0808;
 }
 
 .container form input::placeholder {
-    color: rgba(255,255,255,0.7);
+    color: rgba(235, 135, 135, 0.7);
 }
 
 .btn {
     padding: 12px 20px;
     font-size: 18px;
-    background: linear-gradient(45deg, #ff6ec7, #6ed4ff);
+    background: linear-gradient(45deg, #ff6e6e, #2ab4f0);
     color: antiquewhite;
-    border-radius: 13px;
+    border-radius: 225px;
+    border: ridge rgb(118, 118, 177);
     cursor: pointer;
     transition: all 0.3s ease;
+    width: 50%;
 }
 
 .btn:hover {
-    background: linear-gradient(45deg, #6ed4ff, #ff6ec7);
+    background: linear-gradient(45deg, #067fb3, #ff6e81);
 }
 
 .output {
@@ -109,10 +94,12 @@ body {
 .output table th, .output table td {
     padding: 12px;
     border: 1px solid rgb(185, 92, 157);
+    font-weight: 600;
 }
 
 .output table th {
-    background-color: #f4f4f4;
+    background-color: #e6c6c6;
+    font-weight: bolder;
 }
 
 footer {
