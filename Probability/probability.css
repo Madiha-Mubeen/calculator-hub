@@ -176,7 +176,7 @@ button.reset:hover {
     margin-top: 2rem;
     padding: 2rem 1rem;
     background: var(--input-bg);
-    border-left: 6px solid var(--btn-bg);
+    border-left: 6px solid rgb(151, 53, 70);
     border-radius: 1rem;
     animation: fadeIn 0.6s ease-in-out;
     min-height: 400px; /*ensures room for chart */
@@ -206,16 +206,22 @@ button.reset:hover {
 
 /* Theme Toggle */
 #themeToggle {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
+    background: rgb(202, 196, 196);
+    border-radius: 12px;
+    font-family: 'Newsreader', sans-serif;
+    font-size: 1.2rem;
+    justify-content: right;
+    width: 120px;
+    padding: 3px 12px;
+    border: groove pink;
     cursor: pointer;
     color: var(--text);
     transition: transform 0.3s;
 }
 
 #themeToggle:hover {
-    transform: rotate(20deg);
+    transform: rotate(12deg);
+
 }
 
 /* Tooltips */
@@ -257,33 +263,6 @@ button.reset:hover {
     .container {
         padding: 1.5rem 1rem;
     }
-}
-
-/* Floating Blobs */
-.blob-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vw;
-    z-index: 0;
-    pointer-events: none;
-    overflow: hidden;
-}
-
-/*Shared blob style */
-
-.blob {
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.4;
-    filter: blur(100px);
-    mix-blend-mode: lighten;
-    transition: background 0.5s ease, transform 0.3s ease;
-    animation: subtleFloat 18s ease-in-out infinite;
-    will-change: transform;
-    box-shadow: 0 0 100px rgba(255, 255, 255, 0.1);
-    z-index: 0;
 }
 
 /* Enhanced Float + Rotate Keyframes */
