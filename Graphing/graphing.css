@@ -17,8 +17,8 @@
 body {
     margin: 0;
     font-family: ephesis, cursive;
-    background-color: var(--bg-light);
-    color: var(--text-light);
+    background-color: rgb(33, 100, 45);
+    color: green;
     transition: all 0.4s ease;
     overflow-x: hidden;
 }
@@ -46,15 +46,26 @@ body.dark .container {
 
 input {
     padding: 10px 20px;
-    background-color: #28a745;
+    background-color: #8eb13e;
     color: white;
     font-weight: bold;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
+    width: 70%;
 }
 
+button {
+    color: white;
+    background: rgb(73, 128, 0);
+    width: 50%;
+    border-radius: 22px;
+    padding: 9px 10px;
+    margin: 10px 0;
+    align-items: center;
+
+}
 input[type="submit"]:hover,
 button:hover {
     background-color: #218838;
@@ -76,47 +87,7 @@ button:hover {
     opacity: 0.8;
 }
 
-.blob {
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.3;
-    z-index: 0;
-    animation: float 8s infinite ease-in-out;
-}
 
-.blob1 {
-    width: 300px;
-    height: 300px;
-    background: var(--blob1-light);
-    top: -50px;
-    left: -50px;
-}
-
-.blob2 {
-    width: 200px;
-    height: 200px;
-    background: var(--blob2-light);
-    bottom: 50px;
-    right: -60px;
-}
-
-.blob3 {
-    width: 250px;
-    height: 250px;
-    background: var(--blob3-light);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-body.dark .blob1 { background: var(--blob1-dark); }
-body.dark .blob2 { background: var(--blob2-dark); }
-body.dark .blob3 { background: var(--blob3-dark); }
-
-@keyframes float {
-    0%, 100% { transform: translateY(0) scale(1); }
-    50% { transform: translateY(-20px) scale(1.05); }
-}
 
 @media (max-width: 600px) {
     .blob {
@@ -156,8 +127,10 @@ canvas {
 }
 
 .equationInput {
-    display: block;
-    margin: 5px 0;
-    padding: 10px;
-    width: 100px;
+    display: inline-block;
+    margin: 10px 0px;
+    padding: 10px 0px;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
 }
