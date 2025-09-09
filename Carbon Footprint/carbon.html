@@ -17,37 +17,37 @@
     <main class="container" style="position: relative;">
         <section class="calculator-card">
             <h1 class="title">Carbon Footprint Calculator</h1>
-            <p class="subtitle">Estimate your yearly CO₂ emissions</p>
+            <p class="subtitle">Now you can, Estimate your yearly CO₂ emissions by inserting values here.</p>
 
             <form id="footprintForm" class="form">
                 <!--Car Travel -->
                 <div class="form-group">
-                    <label for="carKm">Car travel per week (km)</label>
+                    <label for="carKm">Car travel taken per week (km)</label>
                     <input type="number" id="carKm" placeholder="e.e. 100" min="0" required>
                 </div>
 
                 <div class="blob blob-bottom-right"></div>
                 <!--Flights-->
                 <div class="form-group">
-                    <label for="flightHours">Flight hours per year</label>
+                    <label for="flightHours">Flight hours per year you take</label>
                     <input type="number" id="flightHours" placeholder="e.g. 10" min="0" required />
                 </div>
 
                 <!--Electricity-->
                 <div class="form-group">
-                    <label for="electricity">Electricity per month (kWh)</label>
+                    <label for="electricity">Electricity per month taken (kWh)</label>
                     <input type="number" id="electricity" placeholder="e.g. 250" min="0" required />
                 </div>
 
                 <!--Waste-->
                 <div class="form-group">
-                    <label for="waste">Waste per week (kg)</label>
+                    <label for="waste">Waste per week you giveout (kg)</label>
                     <input type="number" id="waste" placeholder="e.g. 5" min="0" required />
                 </div>
 
                 <!--Diet-->
                 <div class="form-group">
-                    <label for="diet">Diet type</label>
+                    <label for="diet">Your diet type</label>
                     <select id="diet" required>
                         <option value="meat">Meat-based</option>
                         <option value="vegeterian">Vegetarian</option>

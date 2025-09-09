@@ -99,14 +99,15 @@ select {
 .calculate-btn {
     background-color: rgb(66, 66, 124);
     color: #a6c1ce;
-    padding: 0.75rem;
+    padding: 0.9rem 1.75rem;
     font-weight: 400;
     font-size: 1.1rem;
     font-family: 'Playwrite AU NSW', sans-serif;
-    border: none;
     border-radius: 10px;
     cursor: pointer;
+    width: 50%;
     transition: background 0.3s ease;
+    border: dotted;
 }
 
 .calculate-btn:hover {
@@ -118,7 +119,7 @@ select {
     margin-top: 1.5rem;
     padding: 1rem;
     background-color: #e9f8ee;
-    border-left: 6px solid var(--primary);
+    border-left: 6px solid rgb(39, 10, 117);
     border-radius: 8px;
     display: none;
 }
@@ -175,11 +176,13 @@ body.dark {
 #themeToggle {
     background-color: transparent;
     border: 2px solid rgb(59, 59, 143);
+    border: rgb(59, 59, 143) dotted;
     border-radius: 6px;
     font-size: 0.9rem;
+    font-family: 'Playwrite AU NSW', sans-serif;
     cursor: pointer;
     transition: background 0.3s, color 0.3s;
-    color: var(--text);
+    color: blue;
     padding: 10px 10px;
 }
 
