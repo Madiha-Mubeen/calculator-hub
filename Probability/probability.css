@@ -159,6 +159,7 @@ button.btn:hover {
 button.reset {
     background: #d43b4f;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     color: var(--btn-text);
     font-weight: 600;
     font-size: 1rem;
@@ -171,6 +172,19 @@ button.reset:hover {
     color: rgb(218, 134, 148);
 }
 
+body.dark {
+    background-color: rgb(133, 5, 47);
+}
+body.dark .container {
+    background: rgb(180, 28, 79);
+}
+body.dark form {
+    background-color: rgb(221, 101, 141);
+}
+body.dark h1 {
+    background-color: rgb(248, 171, 207);
+    color: rgb(128, 38, 80);
+}
 /* Result */
 #result {
     margin-top: 2rem;
@@ -206,13 +220,15 @@ button.reset:hover {
 
 /* Theme Toggle */
 #themeToggle {
+    position: absolute;
     background: rgb(202, 196, 196);
     border-radius: 12px;
     font-family: 'Newsreader', sans-serif;
     font-size: 1.2rem;
-    justify-content: right;
     width: 120px;
     padding: 3px 12px;
+    top: 1rem;
+    right: 1rem;
     border: groove pink;
     cursor: pointer;
     color: var(--text);
