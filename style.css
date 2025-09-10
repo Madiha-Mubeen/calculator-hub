@@ -163,9 +163,7 @@ body.dark .open-btn {
 }
 
 #themeToggle {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    position: relative;
     background: #81663e;
     border: none;
     padding: 8px 12px;
@@ -175,6 +173,34 @@ body.dark .open-btn {
     font-family: 'condiment', sans-serif;
     color: #e0bca4;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    float: right;
+    margin: 20px;
+}
+
+nav {
+    background: #885f3a;
+    width: 100%;
+
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 1.2rem 0;
+}
+nav a {
+    text-decoration: wavy underline;
+    color: beige;
+    font-size: 1.1rem;
+}
+
+body.dark nav {
+    background: rgb(118, 158, 196);
+    color: #2e7596;
+}
+body.dark nav a {
+    color: #034353;
 }
 
 body.dark #themeToggle {
@@ -267,15 +293,15 @@ button:hover {
 .cursor-dot {
     width: 10px;
     height: 10px;
-    background: radial-gradient(circle, #3b82f6, #1e3a8a);
-    box-shadow: 0 0 8px #3b82f6;
+    background: radial-gradient(circle, #f6bb3b, #8a6d1e);
+    box-shadow: 0 0 8px #b89a16;
     animation: twinkle 1.5s infinite ease-in-out;
 }
 
 .cursor-ring {
     width: 32px;
     height: 32px;
-    border: 2px solid #60a5fa;
+    border: 2px solid #eeb10a;
     border-radius: 50%;
     transition: all 0.1s ease-out;
     mix-blend-mode: difference;
@@ -285,15 +311,15 @@ button:hover {
 .cursor-trail {
     width: 25px;
     height: 25px;
-    background: rgba(59, 130, 246, 0.1);
+    background: rgba(151, 106, 10, 0.1);
     transition: all 0.1s ease;
-    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 0 20px rgba(146, 115, 14, 0.3);
 }
 
 .cursor {
     width: 6px;
     height: 6px;
-    background-color: #1e3a8a;
+    background-color: #8a681e;
 
 }
 
@@ -312,9 +338,9 @@ button:hover {
 /*Glow-pulse animation*/
 @keyframes glow-pulse {
     0%, 100% {
-        box-shadow: 0 0 5px #60a5fa, 0 0 10px #60a5fa;
+        box-shadow: 0 0 5px #fac960, 0 0 10px #f0c91c;
     }
     50% {
-        box-shadow: 0 0 15px, 0 0 25px #60a5fa;
+        box-shadow: 0 0 15px, 0 0 25px #fac460;
     }
 }
