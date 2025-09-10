@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - CalcZone </title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Condiment&family=Ephesis&family=Griffy&family=Meow+Script&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Potta+One&family=Radley:ital@0;1&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Zen+Antique+Soft&display=swap');
+    </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #e9d2a8;
+            color: #88800e;
+            padding: 2rem;
+            font-size: 1.5rem;
+            font-family: 'Condiment', serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: background 0.4s ease, color 0.4s ease;
+            animation: bgShift 15s ease;
+            background-size: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 0;
+            transition: background 0.4s ease, color 0.4s ease;
+            animation: bgShift 15s ease infinite;
+            cursor: auto;
+        }
+        nav {
+            width: 100%;
+            background: #f1edb3;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 2rem;
+        }
+        nav ul li {
+            list-style: none;
+            display: inline;
+            margin: 0 1.2rem;
+            font-family: 'Condiment', sans-serif;
+            padding: 12px 21px;
+            justify-content: space-between;
+            border-radius: 12px;
+            background: rgb(210, 219, 125);
+        }
+        nav ul li a {
+            text-decoration: wavy underline;
+            color: rgb(59, 94, 3);
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+        nav .logo {
+            font-size: 1.9rem;
+            font-weight: 700;
+            background: linear-gradient(to right, rgb(153, 201, 50), rgb(62, 75, 3));
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            font-family: 'Condiment', sans-serif, 'Times New Roman';
+        }
+        ul li {
+            list-style: none;
+            margin: 1.4rem auto;
+            font-size: 1.7rem;
+            font-family: 'Condiment', sans-serif, 'Times New Roman';
+        }
+        #themeToggle {
+            font-size: 1.1rem;
+            padding: 8px 12px;
+            cursor: pointer;
+            border: none;
+            position: relative;
+            top: 10px;
+            float: right;
+            border-radius: 10px;
+            font-family: 'Condiment', sans-serif, 'Times New Roman';
+            background: #81663e;
+            color: #e0bca4;
+            display: block;
+            margin: 10px 20px 0 auto;
+            margin-top: 12px;
+        }
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.7rem;
+            margin-top: 1.2rem;
+            text-decoration: wavy underline;
+        }
+
+        h3 {
+            font-size: 2.3rem;
+            margin-bottom: 1.3rem;
+            margin-top: 1.5rem;
+            text-decoration: wavy underline;
+        }
+        p {
+            line-height: 3rem;
+            font-size: 1.5rem;
+        }
+        .feedback-section {
+            background: rgb(224, 213, 107);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 30px;
+            border-radius: 12px;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            width: 40%;
+        }
+        .feedback-section h3 {
+            font-size: 1.7rem;
+            margin-bottom: 1.3rem;
+        }
+        .feedback-form {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .feedback-section label {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.5rem;
+            margin-top: 1.2rem;
+            font-family: 'Condiment', sans-serif, 'Times New Roman';
+        }
+        .feedback-section input, .feedback-section textarea {
+            padding: 9px 3px;
+            font-size: 1.1rem;
+            background: rgb(222, 240, 189);
+            color: rgb(94, 128, 0);
+            border: 1px solid green;
+            font-family: 'Condiment', sans-serif, 'Times New Roman';
+            border-radius: 5px;
+            width: 100%;
+            margin-top: 9px;
+        }
+        .feedback-section button {
+            padding: 10px 15px;
+            font-size: 1.3rem;
+            color: rgb(199, 192, 102);
+            cursor: pointer;
+            border: dashed;
+            margin-top: 3rem;
+            border-radius: 12px;
+            font-family: 'Condiment', sans-serif, 'Times New Roman';
+            background: rgb(84, 99, 17);
+        }
+        .feedback-section button:hover {
+            background: rgb(59, 82, 5);
+            color: rgb(138, 160, 60);
+        }
+        footer {
+            background: rgb(207, 224, 106);
+            width: 100%;
+            text-align: center;
+            padding: 1.2rem 0;
+            margin-top: 2.3rem;
+        }
+        @keyframes bgShift {
+            0% {
+                background-position: 0% 50%;
+            } 
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 59%;
+            }
+        }
+
+        body.dark-mode {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            background-image: url('cbc.webp');
+            background-size: cover;
+            animation: bgShift 15s ease infinite;
+            color: #034353;
+        }
+        body.dark-mode h3 {
+            color: rgb(87, 132, 168);
+        }
+        body.dark-mode p {
+            color: rgb(24, 107, 161);
+        }
+        body.dark-mode .feedback-section h3 {
+            color: #034353;
+        }
+        body.dark-mode .feedback-section {
+            background: rgb(190, 216, 219);
+        } 
+        body.dark-mode input, body.dark-mode textarea {
+            background: rgb(231, 231, 241);
+            border: 1px solid rgb(7, 25, 85);
+        }
+        body.dark-mode button {
+            color: rgb(2, 33, 99);
+            background: rgb(119, 164, 231);
+        }
+        body.dark-mode button:hover {
+            color: rgb(3, 22, 87);
+            background: rgb(88, 139, 233);
+        }
+        body.dark-mode #themeToggle {
+            color: rgb(50, 165, 218);
+            background: rgb(4, 55, 97);
+        }
+        body.dark-mode footer {
+            color: rgb(3, 3, 78);
+            background: rgb(205, 205, 248);
+        }
+        body.dark-mode footer p {
+            color: rgb(3, 48, 78);
+        }
+        body.dark-mode nav ul li  {
+            background: rgb(188, 210, 228);
+        }
+        body.dark-mode nav a {
+            color: #022d38;
+        }
+        body.dark-mode nav .logo {
+            background: linear-gradient(to right, rgb(59, 156, 212), rgb(7, 56, 119));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        body.dark-mode nav {
+            background: rgb(216, 219, 221);
+            
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div  class="logo">About - CalcZone Hub</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+      <button id="themeToggle">Dark Mode</button>
+
+      <main class="about-section">
+        <h2>CalcZone Hub Welcomes you here !</h2>
+
+        <p>Calculator Hub is one place where you can use tools like from Scientific or Engineering Calculator to BMI Health. Here we try to give as much precision we can. Our main motive is to give most Calculator types in one place. We would love to hear your suggestion.</p>
+
+        <br>
+        <br>
+        <br>
+
+        <h3>What we Offer ?</h3>
+        <ul>
+            <li>Scientific Calculator</li>
+            <li>Age Calculator</li>
+            <li>Body Mass Index (BMI) Calculator</li>
+            <li>Carbon Footprint Calculator</li>
+            <li>Currency Converter</li>
+            <li>Graphing Calculator</li>
+            <li>Loan Calculator</li>
+            <li>Probability Calculator</li>
+        </ul>
+
+        <br>
+        <br>
+        <br>
+
+        <h3>Our Outlook</h3>
+        <p>We try to provide a utilized tools so its majorly, beneficial for Students, Learner, & can be professional.</p>
+      </main>
+
+      <br>
+      <br>
+      <br>
+
+
+      <section class="feedback-section">
+        <h3>Submit your feedback here</h3>
+        <form action="" method="POST" class="feedback-form"></form>
+        <label>
+            Name:-
+            <input type="text" name="name" placeholder="You can enter your name:" required />
+        </label>
+
+        <label>
+            Email:-
+            <input type="email" name="email" placeholder="your email e.g. youremail@xyz.com" required /> 
+        </label>
+
+        <label>
+            Your Message:-
+            <textarea name="message" rows="7" placeholder="Share your advice or any feedback here"></textarea>
+        </label>
+        
+        <button type="submit">Send the feedback</button>
+      </section>
+
+      <footer>
+        <p>&copy; Built by Madiha Mubeen | All right reserved </p>
+      </footer>
+
+      <script>
+        const themeToggle = document.getElementById("themeToggle");
+        const body = document.body;
+
+        if (localStorage.getItem("theme") === "dark") {
+            body.classList.add("dark-mode");
+            themeToggle.textContent = "Light Mode";
+        }
+
+        // toggle dark mode
+        themeToggle.addEventListener("click", () => {
+            body.classList.toggle("dark-mode");
+
+            if (body.classList.contains("dark-mode")) {
+                themeToggle.textContent = "Light Mode";
+                localStorage.setItem("theme", "dark");
+            } else {
+                themeToggle.textContent = "Dark Mode";
+                localStorage.setItem("theme", "light");
+            }
+        });
+      </script>
+</body>
+</html>
