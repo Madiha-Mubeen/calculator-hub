@@ -23,8 +23,7 @@ body {
     background: rgb(139, 182, 53);
     min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     padding: 2rem;
     color: #9faa3f;
     transition: background 0.4s ease, color 0.4s ease;
@@ -43,7 +42,40 @@ body.dark {
     100% {background-position: 0% 50%;}
 }
 
+nav {
+    position: absolute;
+    display: flex;
+    gap: 30px;
+    top: 0;
+    left: 0;
+    padding: 10px 30px;
+    justify-content: center;
+    width: 100%;
+    background: rgb(72, 114, 17);
+    color: pink;
+    margin-bottom: 20px;
+}
 
+nav ul {
+    list-style: none;
+    display: flex;
+    font-size: 1.5rem;
+    font-style: italic;
+    gap: 30px;
+    text-decoration: rgb(192, 221, 112) wavy underline;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(198, 228, 93);
+}
+
+main {
+    flex: 1;
+    justify-content: flex-start;
+    padding: 30px;
+    margin-top: 50px;
+}
 
 /*Theme Toggle Button*/
 #themeToggle {
@@ -54,13 +86,14 @@ body.dark {
     color: white;
     border: none;
     padding: 10px 14px;
-    border-radius: 8px;
+    border-radius: 0;
     font-size: 1rem;
     font-family:'Courier New', Courier, monospace;
     cursor: pointer;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
     transition: background 0.3s;
     z-index: 10;
+    margin-top: 50px;
 }
 
 #themeToggle:hover {
@@ -78,7 +111,7 @@ body.dark #themeToggle {
     backdrop-filter: blur(12px);
     margin: 100px auto 0;
     padding: 2rem;
-    border-radius: 20px; 
+    border-radius: 0; 
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
     width: 100%;
     color:#142b04;
@@ -502,4 +535,18 @@ body.dark .reset-btn:hover {
 body.dark .calculate-btn {
     background-color: #4299e1;
     color: #fff;
+}
+
+footer {
+    bottom: 0;
+    display: flex;
+    margin-top: 35px;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3rem;
+    font-style: italic;
+    background-color: rgb(71, 112, 17);
+    color: rgb(205, 228, 74);
+    position: relative;
+    width: 100%;
 }
