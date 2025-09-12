@@ -267,11 +267,3 @@ angleRadios.forEach(radio => {
     });
 });
 
-const themeToggle = document.getElementById("themeToggle");
-themeToggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-});
-
-document.getElementById("themeToggle").addEventListener("change", (e) => {
-    document.body.classList.toggle("dark", e.target.checked);
-});
