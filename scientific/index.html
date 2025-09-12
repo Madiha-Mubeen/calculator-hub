@@ -24,7 +24,12 @@
                 <span id="angleIndicator">DEG</span>
                 <input type="text" id="display" disabled/>
             </div>
-
+            <div class="deg-rad">
+                    <label><input type="radio" name="angleMode" value="deg" checked> Deg</label>
+                    <br>
+                    <label><input type="radio" name="angleMode" value="rad"> Rad</label>
+            </div>
+            
             <div class="memory">
                 <button onclick="memoryClear()">MC</button>
                 <button onclick="memoryRecall()">MR</button>
@@ -32,19 +37,17 @@
                 <button onclick="memoryAdd()">M+</button>
                 <button onclick="memorySubtract()">M-</button>
             </div>
-    
+
+           
+            
             <div class="buttons">
 
-                <div class="deg-rad">
-                    <label><input type="radio" name="angleMode" value="deg" checked> Deg</label>
-                    <br>
-                    <label><input type="radio" name="angleMode" value="rad"> Rad</label>
-                </div>
+                
                 <button onclick="sin()">sin</button>
                 <button onclick="cos()">cos</button>
                 <button onclick="tan()">tan</button>
 
-                <button onclick="backspace()">⌫</button>
+                <button class="equal" onclick="backspace()">⌫</button>
 
                 <button onclick="asin()">sin <sup>-1</sup></button>
                 <button onclick="acos()">cos <sup>-1</sup></button>
@@ -89,9 +92,10 @@
                 <button onclick="appendValue('+')">+</button>
 
                 <button onclick="appendValue('/')">&divide;</button>
+                <button class="equal" onclick="appendValue('0')">0</button>
                 <button onclick="appendValue('.')">.</button>
                 <button onclick="toggleSign()">&plusmn;</button>
-                <button onclick="calculateResult()">=</button>
+                <button class="equal" onclick="calculateResult()">=</button>
 
                  
             </div>
