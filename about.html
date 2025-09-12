@@ -235,6 +235,9 @@
             background: rgb(216, 219, 221);
             
         }
+        body.dark-mode input, body.dark-mode textarea {
+            color: #084f61;
+        }
     </style>
 </head>
 <body>
@@ -285,7 +288,7 @@
 
       <section class="feedback-section">
         <h3>Submit your feedback here</h3>
-        <form action="" method="POST" class="feedback-form"></form>
+        <form action="https://formspree.io/f/mldwzkjw" method="POST" class="feedback-form">
         <label>
             Name:-
             <input type="text" name="name" placeholder="You can enter your name:" required />
@@ -302,7 +305,8 @@
         </label>
         
         <button type="submit">Send the feedback</button>
-      </section>
+      </form>
+    </section>
 
       <footer>
         <p>&copy; Built by Madiha Mubeen | All right reserved </p>
