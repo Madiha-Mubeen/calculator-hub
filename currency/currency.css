@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Bitcount+Prop+Single:wght@100..900&family=Bitcount:wght@100..900&family=DM+Serif+Text:ital@0;1&family=Griffy&family=Kings&family=Nosifer&family=Petit+Formal+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+NSW:wght@100..400&family=Quintessential&family=Rouge+Script&display=swap');
 
 body {
-    background: linear-gradient(135deg, #c90a0a, #0652cc);
+    background: rgb(181, 130, 211);
     min-height: 100vh;
     font-family: 'Petit Formal Script', sans-serif;
     display: flex;
@@ -14,9 +14,9 @@ body {
     position: relative;
     max-width: 700px;
     margin: 60px auto;
-    background-color: #ffffff;
+    background-color: #f0cdf3;
     padding: 40px;
-    border-radius: 20px;
+    border-radius: 0;
     box-shadow: 0 8px 25px rgba(0,0,0,0.2);
     font-family: 'Petit Formal Script', sans-serif;
     color: #fff;
@@ -65,19 +65,17 @@ body {
 .btn {
     padding: 12px 20px;
     font-size: 18px;
-    background: linear-gradient(45deg, #ff6e6e, #2ab4f0);
+    background: rgb(133, 58, 133);
     color: antiquewhite;
     border-radius: 225px;
     border: ridge rgb(118, 118, 177);
     cursor: pointer;
-    transition: all 0.3s ease;
-    width: 50%;
+    width: 45%;
 }
 
 .btn:hover {
-    background: linear-gradient(45deg, #067fb3, #ff6e81);
+    background: rgb(248, 113, 135);
 }
-
 .output {
     display: none;
     margin-top: 30px;
