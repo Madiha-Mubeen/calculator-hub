@@ -9,7 +9,8 @@
 body {
     background: rgb(218, 144, 94);
     padding: 10px 20px;
-    margin: auto;
+    margin: 0;
+    min-height: 100vh;
     color: rgb(99, 49, 2);
     font-size: 1.3rem;
     font-family: 'Oregano', sans-serif, 'Times New Roman';
@@ -21,6 +22,8 @@ nav {
     background:rgb(97, 49, 4);
     color: rgb(253, 147, 47);
     margin: auto;
+    gap: 20px;
+    width: 100%;
 }
 
 nav ul {
@@ -39,4 +42,18 @@ nav a {
     text-decoration: wavy;
     color: rgb(228, 190, 165);
     border: dashed;
+}
+
+main {
+    margin-top: 70px;
+    flex: 1;
+}
+
+footer {
+    width: 100%;
+    background: rgb(97, 49, 4);
+    color: rgb(235, 208, 173);
+    text-align: center;
+    justify-content: center;
+    position: fixed;
 }
