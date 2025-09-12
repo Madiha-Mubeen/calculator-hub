@@ -9,9 +9,9 @@
 
 body {
     font-family: 'Radley', sans-serif;
-    background: linear-gradient(135deg, #f4f772, #f37ea5);
     min-height: 100vh;
     display: flex;
+    background-color: rgb(209, 198, 47);
     flex-direction: column;
     justify-content: space-between;
 }
@@ -21,28 +21,26 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    position: sticky;
+    position: relative;
+    justify-content: center;
+    gap: 50px;
+    background: rgb(221, 158, 41);
     top: 0;
     z-index: 10;
-}
-
-nav .logo {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #8a1919;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    text-decoration: rgb(136, 136, 17) wavy underline;
     gap: 20px;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-style: italic;
 }
 
 nav ul li a {
-    text-decoration: underline;
+    text-decoration: none;
     color: #666511;
     font-size: 1.4rem;
     font-family: 'Radley', sans-serif;
@@ -50,18 +48,16 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #ffeb3b;
-}
 
 .container {
     max-width: 500px;
     margin: 50px auto;
     padding: 30px;
-    border-radius: 15px;
+    border-radius: 0;
     background: #b32222;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     text-align: center;
+
 }
 
 h1 {
@@ -77,10 +73,10 @@ form {
     gap: 15px;
     width: 500px;
     margin: 50px auto;
-    background: rgb(250, 247, 80);
+    background: rgb(252, 248, 53);
     padding: 30px;
     box-shadow: 3px 4px 12px rgba(116, 99, 7, 0.4);
-    border-radius: 40px;
+    border-radius: 0;
     font-family: 'Radley', sans-serif;
     
 }
@@ -89,7 +85,7 @@ label {
     font-size: 16px;
     text-align: left;
     font-weight: bold;
-    color: rgb(63, 47, 3);
+    color: rgb(151, 93, 5);
     font-size: 1.3rem;
     
 }
@@ -102,6 +98,7 @@ input, select {
     border: none;
     background: rgba(255,255,255,0.2);
     color: #616913;
+    width: 45%;
 }
 
 input::placeholder {
@@ -110,21 +107,21 @@ input::placeholder {
 }
 
 .btn {
-    padding: 12px;
+    padding: 12px 30px;
     border: none;
     border-radius: 12px;
-    background: linear-gradient(45deg, #c74a6f, #dcf30a);
+    background-color: rgb(126, 133, 37);
     color: #fff;
     font-size: 1.3rem;
     font-family: 'Radley', sans-serif;
     cursor: pointer;
     transition: all 0.3s ease;
-    width: 50%;
+    width: 35%;
     padding: 12px 20px;
 }
 
 .btn:hover {
-    background: linear-gradient(45deg, #ff6e8d, #f5ff6e);
+    background-color: rgb(158, 158, 8);
 }
 
 .output {
@@ -138,10 +135,10 @@ input::placeholder {
 footer {
     text-align: center;
     padding: 15px;
-    background: rgba(255,255,255,0.15);
+    background-color: rgb(207, 147, 35);
     color: #616314;
-    font-size: 1.2rem;
-    backdrop-filter: blur(10px);
+    font-size: 1.3rem;
+    font-style: italic;
 }
 
 @media (max-width: 600px) {
