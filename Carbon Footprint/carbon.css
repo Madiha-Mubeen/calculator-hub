@@ -21,9 +21,38 @@ body {
     color: var(--text);
     min-height: 100vh;
     overflow-x: hidden;
-    position: relative;
+    
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 10px 30px;
+    background: rgb(128, 143, 207);
+    color: pink;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    margin: auto;
+    font-size: 1.5rem;
+    font-style: italic;
+    justify-content: space-between;
+    text-decoration: rgb(192, 235, 255) wavy underline;
+}
+nav a {
+    text-decoration: none;
+    color: rgb(16, 16, 99);
+}
 /* Main Layout */
 .container {
     display: flex;
@@ -31,6 +60,7 @@ body {
     align-items: center;
     padding: 2rem;
     min-height: 100vh;
+    margin-top: 50px;
     position: relative;
     z-index: 1;
     overflow-x: hidden;
@@ -40,7 +70,7 @@ body {
 .calculator-card {
     background-color: rgb(132, 132, 228);
     padding: 2rem;
-    border-radius: 27px;
+    border-radius: 0px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
     max-width: 480px;
     position: relative;
@@ -103,7 +133,7 @@ select {
     font-weight: 400;
     font-size: 1.1rem;
     font-family: 'Playwrite AU NSW', sans-serif;
-    border-radius: 10px;
+    border-radius: 0px;
     cursor: pointer;
     width: 50%;
     transition: background 0.3s ease;
@@ -177,7 +207,9 @@ body.dark {
     background-color: transparent;
     border: 2px solid rgb(59, 59, 143);
     border: rgb(59, 59, 143) dotted;
-    border-radius: 6px;
+    border-radius: 0;
+    margin-top: 30px;
+
     font-size: 0.9rem;
     font-family: 'Playwrite AU NSW', sans-serif;
     cursor: pointer;
@@ -189,6 +221,10 @@ body.dark {
 #themeToggle:hover {
     background-color: rgb(130, 130, 233);
     color: #e3eef7;
+}
+
+body.dark #themeToggle {
+    border: rgb(0, 183, 255) dotted;
 }
 
 /* Dark mode basics */
@@ -213,4 +249,14 @@ body.dark .result {
 .result-box {
     background-color: var(--card);
     color: #140441;
+}
+
+footer {
+    background: rgb(128, 143, 207);
+    color: rgb(8, 37, 75);
+    padding: 10px 30px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-style: italic;
 }
