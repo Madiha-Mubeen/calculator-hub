@@ -4,7 +4,7 @@ function convertTime() {
     const resultDiv = document.getElementById("timeResult");
 
     if (isNaN(value)) {
-        resultDiv.innerHTML = "<p>Please do enter the number.</p>";
+        resultDiv.innerHTML = "<p>Please do enter the number to convert.</p>";
         return;
     }
 
