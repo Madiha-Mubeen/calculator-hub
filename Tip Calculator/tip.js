@@ -3,8 +3,8 @@ function calculateTip() {
     const tipPercent = parseFloat(document.getElementById("tipPercent").value);
     const people = parseFloat(document.getElementById("people").value);
 
-    if(isNaN(bill) || isNaN(tipPercent) || isNaN(people) || bill <= 0 || tipPercent <= 0 || people <= 0) {
-        document.getElementById("result").innerText = "Please do enter values to calculate the tip";
+    if(isNaN(bill) || isNaN(tipPercent) || isNaN(people)  || bill <= 0 || people <= 0) {
+        document.getElementById("result").innerText = "Please do enter values to calculate the tip.";
         return;
     }
 
@@ -12,10 +12,10 @@ function calculateTip() {
     const total = bill + tip;
     const perPerson = total / people;
 
-    document.getElementById("result").innerHtml = `
-    Tipping Amount: $${tip.toFixed(2)} 
+    document.getElementById("result").innerHTML = `
+    Tipping Amount: ${tip.toFixed(2)} 
     <br>
-    Total Billing: $${total.toFixed(2)}
+    Total Billing: ${total.toFixed(2)}
     <br>
-    Per Person Tip: $${perPerson.toFixed(2)}`;
+    Per Person Amounting: ${perPerson.toFixed(2)}`;
 }
