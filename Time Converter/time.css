@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: grey;
+    color: rgb(216, 214, 214);
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif, 'Times New Roman';
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    background: rgb(139, 36, 36);
+    color: grey;
+    padding: 10px 30px;
+    text-align: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    justify-content: space-around;
+    display: flex;  
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: grey wavy underline;
+}
+
+nav a {
+    text-decoration: none;
+    color: grey;
+    font-style: italic;
+}
+
+.container-converter {
+    background: rgb(156, 57, 57);
+    color: grey;
+    padding: 10px 30px;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+h1 {
+    font-size: 1.5rem;
+    color: rgb(182, 181, 181);
+    margin-bottom: 30px;
+    margin-top: 21px;
+}
+
+label {
+    color: rgb(182, 181, 181);
+    font-size: 1.1rem;
+    padding: 10px 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+input, select {
+    background: rgb(233, 202, 202);
+    color: rgb(167, 22, 46);
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    margin: 21px;
+    align-items: center;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+button {
+    background: rgb(185, 133, 133);
+    padding: 10px 30px;
+    margin-top: 30px;
+    font-size: 1rem;
+
+}
+
+p {
+    color: rgb(224, 165, 175);
+    font-size: 1.3rem;
+}
+
+footer {
+    padding: 10px 30px;
+    background: rgb(139, 36, 36);
+    color: grey;
+    font-size: 1.3rem;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    container-converter {
+        width: auto;
+        height: auto;
+    }
+    button {
+        font-size: 1rem;
+    }
+    input, select {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+    label {
+        display: block;
+        margin: 7px 0;
+    }
+    input, select {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 1px;
+    }
+    nav ul li {
+        margin: 7px 0;
+    }
+}
