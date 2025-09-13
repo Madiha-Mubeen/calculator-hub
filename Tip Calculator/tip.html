@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip calculator - CalcZone</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container-converter">
+            <h1>Tip Calculator</h1>
+
+            <label>Billing Amount: </label>
+
+            <br>
+
+            <input type="number" id="bill" placeholder="Enter bill amount">
+
+            <br>
+
+            <label>Tip Percentage %:</label>
+
+            <br>
+
+            <input type="number" id="tipPercent" placeholder="Enter the tip percent to calculate">
+
+            <br>
+
+            <label>Numbers of People(s):</label>
+
+            <br>
+
+            <input type="number" id="people" placeholder="Enter the amount of people during this:" value="1">
+
+            <br>
+
+            <button onclick="calculateTip()">Click to calculate</button>
+
+            <div class="result" id="result"></div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2025 Built by Madiha Mubeen | All right reserved
+    </footer>
+</body>
+</html>
