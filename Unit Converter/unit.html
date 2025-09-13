@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div>
+            <h1>Unit Converter</h1>
+
+            <label for="category">Choose the specific unit you want to convert to:</label>
+            <select id="category" onchange="updateUnits()">
+                <option value="length">Lenght (cm <-> inch):</option>
+                <option value="weight">Weight (kg <-> lbs):</option>
+                <option value="temperature">Temperature (°C <-> °F):</option>
+            </select>
+
+            <br>
+
+            <label for="fromValue">From:</label>
+            <input type="number" id="fromValue" oninput="convert()">
+            <select id="fromUnit" onchange="convert()"></select>
+
+            <br>
+
+            <label for="toValue">To:</label>
+            <input type="text" id="toValue" disabled>
+
+            <select id="toUnit" onchange="convert()"></select>
+        </div>
+    </main>
+</body>
+</html>
