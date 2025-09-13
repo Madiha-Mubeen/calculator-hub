@@ -22,44 +22,12 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     position: relative;
-    padding: 2rem 1rem;
-}
-
-/* Theme Variable */
-body.light {
-    --bg: #f8fafc;
-    --card-bg: #ffffff;
-    --text: #111;
-    --input-bg: #f1f5f9;
-    --border: #d1d5db;
-    --btn-bg: #6366f1;
-    --btn-hover: #4f46e5;
-    --reset-bg: #f59e0b;
-    --reset-hover: #d97706;
-    --btn-text: #fff;
-    --tooltip-bg: #000;
-    --tootltip-text: #fff;
-}
-
-body.dark {
-    --bg: #121212;
-    --card-bg: #1f1f1f;
-    --text: #f9f9f9;
-    --input-bg: #2c2c2c;
-    --border: #444;
-    --btn-bg: #8b5cf0;
-    --btn-hover: #7c3aed;
-    --reset-bg: #facc15;
-    --reset-hover: #eab308;
-    --bg-text: #fff;
-    --tooltip-bg: #fff;
-    --tooltip-text: #111;
 }
 
 /* Container & Layout*/
 .container {
     max-width: 600px;
-    width: 85%;
+    width: 75%;
     margin: auto;
     background: pink;
     border-radius: 1rem;
@@ -67,6 +35,34 @@ body.dark {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 2;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    background-color: rgb(196, 77, 106);
+    color: rgb(238, 180, 190);
+    justify-content: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    text-decoration: rgb(247, 207, 214) wavy underline;
+    font-size: 1.5rem;
+    justify-content: space-evenly;
+    font-style: italic;
+    padding: 12px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(240, 217, 221);
 }
 
 header {
@@ -95,6 +91,7 @@ form {
     border-radius: 9px;
     justify-content: center;
     text-align: center;
+    margin-top: 30px;
 }
 
 .form-group {
@@ -220,24 +217,23 @@ body.dark h1 {
 
 /* Theme Toggle */
 #themeToggle {
-    position: absolute;
+    position: relative;
+    left: 0;
     background: rgb(202, 196, 196);
     border-radius: 12px;
     font-family: 'Newsreader', sans-serif;
     font-size: 1.2rem;
     width: 120px;
     padding: 3px 12px;
-    top: 1rem;
-    right: 1rem;
+    margin-top: 10px;
+
+    float: right;
     border: groove pink;
     cursor: pointer;
+    margin-bottom: 120px;
+    gap: 30px;
     color: var(--text);
     transition: transform 0.3s;
-}
-
-#themeToggle:hover {
-    transform: rotate(12deg);
-
 }
 
 /* Tooltips */
@@ -335,4 +331,14 @@ label {
 
 html, body {
     height: 100%;
+}
+
+footer {
+    padding: 10px 30px;
+    background: rgb(247, 86, 86);
+    color: pink;
+    text-align: center;
+    font-size: 1.3rem;
+    font-style: italic;
+    width: 100%;
 }
