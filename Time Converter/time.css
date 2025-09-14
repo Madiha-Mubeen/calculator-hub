@@ -5,8 +5,8 @@
 }
 
 body {
-    background: grey;
-    color: rgb(216, 214, 214);
+    background: rgb(197, 197, 197);
+    color: rgb(247, 244, 244);
     min-height: 100vh;
     justify-content: center;
     align-items: center;
@@ -15,6 +15,9 @@ body {
     font-family: 'Raleway', sans-serif, 'Times New Roman';
 }
 
+body.dark {
+    background: rgb(110, 109, 109);
+}
 main {
     flex: 1;
     display: flex;
@@ -22,7 +25,7 @@ main {
 }
 
 nav {
-    background: rgb(139, 36, 36);
+    background: rgb(180, 43, 43);
     color: grey;
     padding: 10px 30px;
     text-align: center;
@@ -47,23 +50,43 @@ nav a {
     font-style: italic;
 }
 
+#themeToggle {
+    padding: 10px 30px;
+    float: right;
+    margin: 15px 40px 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: rgb(83, 83, 83);
+    font-size: 1.12rem;
+    border: rgb(78, 78, 78) dashed;
+    background: rgb(207, 177, 177);
+}
+
+body.dark #themeToggle {
+    background: rgb(235, 114, 114);
+    border: rgb(131, 66, 66) dashed;
+}
 .container-converter {
-    background: rgb(156, 57, 57);
+    background: rgb(187, 66, 66);
     color: grey;
     padding: 10px 30px;
     width: auto;
     height: auto;
     text-align: center;
 }
+
 h1 {
     font-size: 1.5rem;
-    color: rgb(182, 181, 181);
+    color: rgb(233, 228, 228);
     margin-bottom: 30px;
     margin-top: 21px;
 }
 
+body.dark h1 {
+    color: rgb(228, 202, 202);
+}
 label {
-    color: rgb(182, 181, 181);
+    color: rgb(221, 218, 218);
     font-size: 1.1rem;
     padding: 10px 30px;
     text-align: center;
@@ -72,9 +95,12 @@ label {
     margin-bottom: 30px;
 }
 
+body.dark label {
+    color: rgb(223, 195, 195);
+}
 input, select {
-    background: rgb(233, 202, 202);
-    color: rgb(167, 22, 46);
+    background: rgb(214, 177, 177);
+    color: rgb(197, 18, 48);
     padding: 10px 12px;
     display: flex;
     flex-direction: column;
@@ -82,24 +108,39 @@ input, select {
     align-items: center;
     text-align: center;
     font-size: 0.9rem;
+    margin-right: 30px;
+}
+
+body.dark input, select {
+    color: rgb(99, 4, 4);
 }
 
 button {
-    background: rgb(185, 133, 133);
+    background: rgb(238, 186, 186);
     padding: 10px 30px;
     margin-top: 30px;
     font-size: 1rem;
+    font-family: 'Raleway', sans-serif, 'Times New Roman';
 
 }
 
+body.dark button {
+    background: rgb(189, 147, 147);
+    color: rgb(77, 8, 8);
+    font-weight: 600;
+}
 p {
-    color: rgb(224, 165, 175);
+    color: rgb(240, 221, 224);
     font-size: 1.3rem;
+}
+
+body.dark p {
+    color: rgb(179, 145, 145);
 }
 
 footer {
     padding: 10px 30px;
-    background: rgb(139, 36, 36);
+    background: rgb(165, 38, 38);
     color: grey;
     font-size: 1.3rem;
     text-align: center;

@@ -5,7 +5,7 @@
 }
 
 body {
-    background: #b87c4c;
+    background:rgb(233, 188, 129);
     color: #f7f5ea;
     justify-content: center;
     align-items: center;
@@ -16,6 +16,10 @@ body {
     font-family: 'QuickSand', sans-serif, 'Times New Roman';
 }
 
+body.dark {
+    background: #b87c4c;
+    color: pink;
+}
 main {
     flex: 1;
     justify-content: space-between;
@@ -30,9 +34,13 @@ nav {
     font-weight: 700;
     font-style: italic;
     padding: 10px 30px;
-    background: #a8bba3;
+    background: #89a57f;
     width: 100%;
     margin-bottom: 30px;
+}
+
+body.dark nav {
+    background: rgb(95, 126, 95);
 }
 
 nav ul {
@@ -49,8 +57,27 @@ nav a {
     color: #ecdbd3;
 }
 
+#themeToggle {
+    padding: 10px 30px;
+    float: right;
+    margin: 15px 40px 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: auto;
+    font-size: 1.1rem;
+    font-family: 'QuickSand', sans-serif, 'Times New Roman';
+    font-weight: 700;
+    border: #a8bba3 dashed;;
+}
+
+body.dark #themeToggle {
+    background: rgb(97, 124, 105);
+    color: pink;
+    border: darkslategrey  dashed;
+}
+
 .container-converter {
-    background: #a8bba3;
+    background: #74946b;
     padding: 10px 30px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -60,6 +87,9 @@ nav a {
     height: auto;
 }
 
+body.dark .container-converter {
+    background: rgb(32, 77, 77);
+}
 h1 {
     text-align: center;
     font-size: 2.1rem;
@@ -93,16 +123,27 @@ button {
 
 .result {
     font-size: 1.3rem;
+    font-weight: 700;
     color: #5a3212;
 }
 
+body.dark .result {
+    color: pink;
+}
+
 footer {
-    background: #a8bba3;
+    background: #89a57f;
     width: 100%;
     padding: 10px 30px;
     font-size: 1.3rem;
+    font-family: 'QuickSands', sans-serif, 'Times New Roman';
     text-align: center;
     margin-top: 30px;
+}
+
+body.dark footer {
+    background: rgb(95, 126, 95);
+    font-weight: 700;
 }
 
 @media (max-width: 768px) {
