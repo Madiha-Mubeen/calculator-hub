@@ -70,6 +70,7 @@ main {
     text-align: center;
     border: dashed;
     margin-top: 21px;
+    margin-right: 30px;
 }
 
 body.dark #themeToggle {
@@ -96,7 +97,7 @@ body.dark #themeToggle {
 }
 
 body.dark .card {
-    background: rgb(151, 102, 102);
+    background: rgb(182, 131, 131);
 }
 .card h2 {
     font-size: 2rem;
