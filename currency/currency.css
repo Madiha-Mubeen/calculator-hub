@@ -10,6 +10,37 @@ body {
     align-items: center;
 }
 
+body.dark {
+    background: rgb(136, 65, 130);
+}
+body.dark .container {
+    background: rgb(214, 135, 221);
+}
+body.dark h1 {
+    color: rgb(197, 8, 150);
+    background: rgb(218, 187, 206);
+}
+body.dark nav {
+    background: rgb(167, 83, 160);
+}
+body.dark footer {
+    background: rgb(128, 45, 128);
+}
+body.dark nav a {
+    color: rgb(228, 179, 206);
+}
+#themeToggle {
+    background: pink;
+    padding: 10px 30px;
+    margin-top: 30px;
+    float: right;
+    position: relative;
+    right: 0;
+    text-align: right;
+    margin: 15px 40px 0 auto;
+    justify-content: flex-end;
+}
+
 .container {
     position: relative;
     max-width: 700px;
