@@ -41,7 +41,7 @@ const body = document.body;
 
 if (localStorage.getItem("theme") === "dark") {
     body.classList.add("dark");
-    toggleBtn.textContent = "Light mode";
+    toggleBtn.textContent = "Light Mode";
 }
 
 toggleBtn.addEventListener("click", () => {
