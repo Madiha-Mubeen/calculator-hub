@@ -72,6 +72,30 @@ body.dark #themeToggle {
     background: rgb(238, 196, 60);
     border: rgb(126, 68, 35) dashed;
 }
+
+h2 {
+    text-align: center;
+    color: rgb(114, 114, 26);
+    text-decoration: rgb(114, 114, 29) wavy underline;
+    margin-bottom: 21px;
+}
+
+body.dark h2 {
+    color: rgb(247, 229, 192);
+    text-decoration: rgb(247, 229, 192) wavy underline;
+}
+
+p {
+    color: rgb(100, 79, 38);
+    font-size: 1.15rem;
+    font-style: italic;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+body.dark p {
+    color: rgb(247, 229, 192);
+}
 .container {
     max-width: 500px;
     margin: 50px auto;
@@ -186,7 +210,7 @@ footer {
     text-align: center;
     padding: 15px;
     background-color: rgb(207, 147, 35);
-    color: #616314;
+    color: #2e3008;
     font-size: 1.3rem;
     font-style: italic;
 }
@@ -195,6 +219,7 @@ body.dark footer {
     background: rgb(129, 80, 39);
     color: rgb(248, 217, 159);
 }
+
 @media (max-width: 600px) {
     nav {
         flex-direction: column;
@@ -209,5 +234,51 @@ body.dark footer {
     }
     h1 {
         font-size: 22px;
+    }
+}
+
+@media (Max-width: 700px) {
+    nav {
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px 21px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+        font-size: 1.23rem;
+    }
+
+    #themeToggle {
+        margin: 15px auto 0 auto;
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    input, select {
+        width: 80%;
+    }
+
+    form {
+        width: 95%;
+        padding: 21px;
+    }
+
+    .btn {
+        width: 70%;
+    }
+    
+    p {
+        font-size: 1.1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .output {
+        font-size: 1.19rem;
     }
 }
