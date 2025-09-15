@@ -25,7 +25,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
     color: #88800e;
     font-size: 1.2rem;
     text-align: center;
@@ -43,9 +42,6 @@ body.dark {
     animation: bgShift 15s ease infinite;
 }
 
-body.dark footer {
-    color: #e1e6ec;
-}
 h1 {
     font-size: 2.9rem;
     background: linear-gradient(to right, #795f30, #df9c5e);
@@ -62,16 +58,6 @@ body.dark h1 {
  body.dark .card {
     color: #1c2852;
  }
-
-body.dark .tagline {
-    color: var(--text-dark);
-    font-size: 10rem;
-}
-
-.tagline::after {
-    content: '✨';
-    animation: pulseGlow 1.5s infinite;
-}
 
 @keyframes pulseGlow {
     0%, 100% {
@@ -117,18 +103,7 @@ body.dark .card:hover {
 body.dark .open-btn:hover {
     color: #17314e;
 }
-.card::before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    z-index: 10;
-    filter: blur(60px);
-    animation: borderPulse 6s infinte linear;
-}
- 
+
 @keyframes borderPulse {
     0% {
         filter: blur(10px) hue-rotate(0deg);
@@ -214,12 +189,14 @@ footer {
     margin-top: 3rem;
     font-size: 1.3rem;
     opacity: 0.7;
+    padding: 10px 30px;
     width: 100%;
     background: #3f1e01;
     color: beige;
 }
 body.dark footer {
     color: rgb(11, 11, 46);
+    background: rgb(148, 195, 250);
 }
 
 footer a {
@@ -289,46 +266,6 @@ button:hover {
    
 }
 
-.cursor, .cursor-dot, .cursor-ring, .cursor-trail {
-    position: fixed;
-    pointer-events: none;
-    z-index: 9999;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-}
-
-.cursor-dot {
-    width: 10px;
-    height: 10px;
-    background: radial-gradient(circle, #f6bb3b, #8a6d1e);
-    box-shadow: 0 0 8px #b89a16;
-    animation: twinkle 1.5s infinite ease-in-out;
-}
-
-.cursor-ring {
-    width: 32px;
-    height: 32px;
-    border: 2px solid #eeb10a;
-    border-radius: 50%;
-    transition: all 0.1s ease-out;
-    mix-blend-mode: difference;
-    animation: glow-pulse 2s infinite ease-in-out;
-}
-
-.cursor-trail {
-    width: 25px;
-    height: 25px;
-    background: rgba(151, 106, 10, 0.1);
-    transition: all 0.1s ease;
-    box-shadow: 0 0 20px rgba(146, 115, 14, 0.3);
-}
-
-.cursor {
-    width: 6px;
-    height: 6px;
-    background-color: #8a681e;
-
-}
 
 /*Sparkle animation*/
 @keyframes twinkle {
