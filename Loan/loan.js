@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const form = document.getElementById("loanForm");
     const resultDiv = document.getElementById("result");
-    const toggleBtn = document.getElementById("themeToggle");
     const resetBtn = document.getElementById("resetBtn");
 
     //Submit handler
@@ -119,17 +118,6 @@ document.addEventListener("DOMContentLoaded", function () {
         resultDiv.innerHTML = "";
     };
 
-    //Theme Toggle
-    toggleBtn.onclick = () => {
-        document.body.classList.toggle("dark");
-        localStorage.setItem("theme", document.body.classList.contains("dark") ? "dark" : "light");
-    };
-
-    //Apply Saved Theme
-    if (localStorage.getItem("theme") === "dark") {
-        document.body.classList.add("dark");
-    }
-
     //Display existing history on load
     displayLoanHistory();
 });
@@ -186,9 +174,6 @@ function exportLoanCSV() {
         ])
     ].map(row => row.join(",")).join("\n");
 
-    const blob = new Blob([csvContent], { type: "text/csv"});
-    const url = URL.createObjectURL(blob);
-
     const a = document.createElement("a");
     a.href = url;
     a.download = "loan_history.csv";
@@ -203,5 +188,25 @@ document.addEventListener("click", function (e) {
         link.download = "emi_chart.png";
         link.href = document.getElementById("emiChart").toDataURL;
         link.click();
+    }
+});
+
+const toggleBtn = document.getElementById("themeToggle");
+const body = document.body;
+
+if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark");
+    toggleBtn.TextContent = "Light Mode";
+}
+
+toggleBtn.addEventListener("click", () => {
+    body.classList.toggle("dark");
+
+    if (body.classList.contains("dark")) {
+        toggleBtn.textContent = "Light Mode";
+        localStorage.setItem("theme", "dark");
+    } else {
+        toggleBtn.textContent = "Dark Mode";
+        localStorage.setItem("theme", "light");
     }
 });
