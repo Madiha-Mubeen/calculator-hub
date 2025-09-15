@@ -95,6 +95,7 @@ a {
     border: 1px solid rgba(114, 73, 19, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
+    font-size: 1.3rem;
 }
 
 body.dark .card:hover {
@@ -118,7 +119,7 @@ body.dark .open-btn:hover {
 }
 
 .card p {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     opacity: 0.85;
     margin-bottom: 1rem;
 }
@@ -126,7 +127,7 @@ body.dark .open-btn:hover {
 .open-btn {
     font-weight: bold;
     color: #bbbe88;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 body.dark .card {
