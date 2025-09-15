@@ -47,6 +47,26 @@ nav a {
 main {
     flex: 1;
 }
+
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(168, 212, 168);
+    text-decoration: rgb(185, 185, 153) wavy underline;
+}
+
+body.dark h2 {
+    color: beige;
+    text-decoration: beige wavy underline;
+}
+
+p {
+    text-align: center;
+    font-size: 1.13rem;
+    font-style: italic;
+    color: rgb(194, 243, 194);
+}
+
 .container {
     background: #77cfa6;
     border-radius: 0;
@@ -325,18 +345,6 @@ body.dark #themeToggle {
     color: #fff;
 }
 
-/* Animation *
-@keyframes fadeInUp {
-    from {
-        transform: tranlateY(10px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-*/
 .loan-result, .summary-box {
     animation: fadeInUp 0.4s ease-in-out;
 }
