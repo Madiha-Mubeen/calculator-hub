@@ -22,7 +22,6 @@ nav {
     width: 100%;
     align-items: center;
     justify-content: space-around;
-    padding: 10px 30px;
     background: rgb(180, 89, 93);
     margin-bottom: 10px;
 }
@@ -55,8 +54,6 @@ nav a {
 main {
     flex: 1;
     padding-top: 110px;
-    align-items: flex-start;
-    display: flex;
     justify-content: center;
 }
 
@@ -76,22 +73,49 @@ main {
 body.dark #themeToggle {
     background: rgb(177, 104, 116);
     color: rgb(139, 25, 53);
+    border: rgb(110, 40, 58) dashed;
+}
+
+h3 {
+    color: pink;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.37rem;
+    text-decoration: pink wavy underline;
+}
+
+body.dark h3 {
+    color: rgb(248, 227, 214);
+    text-decoration: wheat wavy underline;
+}
+
+p {
+    color: pink;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+    font-style: italic;
 }
 .card p {
-    font-size: 20px;
+    font-size: 20px;    
+    color: rgb(136, 55, 55);
 }
 .card {
     position: relative;
     margin-top: 30px;
     width: 30%;
     background: rgb(247, 173, 185);
-    padding: 2rem;
+    padding: 10px 30px;
     border-radius: 0;
     text-align: center;
     color: #500b0b;
     z-index: 1;
     margin-top: 30px;
     margin-bottom: 50px;
+    margin: 30px auto 50px auto;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -127,6 +151,7 @@ button {
     cursor: pointer;
     font-size: 1rem;
     transition: transform 0.2s ease, background 0.3s ease;
+    
 }
 
 form label {
@@ -144,7 +169,7 @@ form label {
 
 
 button {
-    width: 100%;
+    width: 55%;
     box-sizing: border-box;
     margin-top: 0.5rem;
 }
@@ -152,7 +177,7 @@ button {
 footer {
     bottom: 0;
     position: relative;
-    padding: 30px;
+    padding: 10px 30px;
     width: 100%;
     color: pink;
     background: rgb(180, 89, 93);
@@ -163,4 +188,42 @@ footer {
 
 body.dark footer {
     background: rgb(155, 51, 51);
+}
+
+@media (max-width: 700px) {
+    .card {
+        width: 70%;
+        margin: 21px auto;
+    }
+
+    nav ul {
+        font-size: 1.3rem;
+        gap: 13px;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 85%;
+        margin: 21px auto;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+        font-size: 1.01rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    p, .card p {
+        font-size: 0.91rem;
+    }
 }
