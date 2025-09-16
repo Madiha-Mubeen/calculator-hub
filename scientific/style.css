@@ -73,6 +73,35 @@ body.dark #themeToggle {
     color: rgb(165, 87, 42);
     border: rgb(173, 115, 76) dashed;
 }
+
+h2 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13px;
+    color: rgb(122, 34, 34);
+    text-decoration: rgb(119, 29, 29) wavy underline;
+}
+
+body.dark h2 {
+    color: rgb(124, 39, 39);
+    text-decoration: rgb(128, 39, 39) wavy underline;
+}
+
+p {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: rgb(128, 28, 28);
+    font-size: 1.33rem;
+    font-style: italic;
+    margin-top: 12px;
+}
+
+body.dark p {
+    color: rgb(131, 10, 10);
+}
+
 main {
     margin-top: 70px;
     flex: 1;
@@ -84,7 +113,7 @@ footer {
     color: rgb(235, 208, 173);
     text-align: center;
     justify-content: center;
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     margin-top: 50px;
@@ -188,7 +217,7 @@ button {
     text-align: right;
     align-items: center;
     justify-content: center;
-    width: auto;
+    width: 75%;
 }
 
 .deg-rad {
@@ -206,3 +235,72 @@ button {
     cursor: pointer;
 }
 
+@media (max-width: 700px) {
+    .calculator-container {
+        width: 75%;
+        padding: 15px 10px;
+    }
+
+    nav ul {
+        font-size: 1.3rem;
+        gap: 23px;
+    }
+
+    #display {
+        font-size: 1.25rem;
+        padding: 12px 35px;
+    }
+
+    .buttons {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 12px;
+    }
+
+    .memory {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 15px;
+    }
+
+    button, .buttons button {
+        font-size: 1.1rem;
+        padding: 3px;
+    }
+}
+
+@media (max-width: 600px) {
+    .calculator-container {
+        width: 80%;
+        padding: 10px 13px;
+        margin-bottom: 30px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    #display {
+        width: 70%;
+        padding: 10px 30px;
+        font-size: 1.1rem;
+    }
+    .buttons {
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+
+    button, .buttons button {
+        font-size: 1.2rem;
+    }
+
+    #themeToggle {
+        width: 30%;
+        padding: 10px 30px;
+        height: 61px;
+    }
+    
+    footer {
+        margin-top: 30px;
+    }
+}
