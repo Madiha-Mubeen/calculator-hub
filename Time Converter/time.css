@@ -66,6 +66,34 @@ body.dark #themeToggle {
     background: rgb(235, 114, 114);
     border: rgb(131, 66, 66) dashed;
 }
+
+h2 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: rgb(153, 15, 38);
+    text-decoration: rgb(110, 26, 51) wavy underline;
+    margin-bottom: 21px;
+}
+
+body.dark h2 {
+    color: rgb(252, 207, 207);
+    text-decoration: rgb(252, 207, 207) wavy underline;
+}
+
+.use-cases {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: rgb(133, 6, 44);
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+body.dark .use-cases {
+    color: rgb(253, 207, 207);
+}
 .container-converter {
     background: rgb(187, 66, 66);
     color: grey;
@@ -134,7 +162,7 @@ p {
     font-size: 1.3rem;
 }
 
-body.dark p {
+body.dark .result p {
     color: rgb(179, 145, 145);
 }
 
