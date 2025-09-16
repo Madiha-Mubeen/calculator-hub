@@ -1,24 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const toggleBtn = document.getElementById("themeToggle");
     const resultBox = document.getElementById("result");
-
-    //Theme toggle Logic
-    toggleBtn.addEventListener("click", () => {
-        document.body.classList.toggle("dark");
-    });
-
-    //Parallax blob animation
-    const blobs = document.querySelectorAll(".blob");
-
-    document.addEventListener("mousemove", (e) => {
-        const {clientX, clientY } = e;
-        blobs.forEach((blob, i) => {
-            const movement = (i + 1) * 0.02;
-            const x = (clientX - window.innerWidth / 2) * movement;
-            const y = (clientY - window.innerHeight / 2) * movement;
-            blob.style.transform = `translate(${x}px, ${y}px) scale(1)`;
-        });
-    });
 
     //Carbon Footprint Calculator 
     document.getElementById("footprintForm").addEventListener("submit", (e) => {
@@ -52,4 +33,26 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
         resultBox.classList.add("show");
     });
+
+    const toggleBtn = document.getElementById("themeToggle");
+    const body = document.body;
+
+    if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark");
+        toggleBtn.textContent = "Light Mode";
+    } else {
+        toggleBtn.textContent = "Dark Mode";
+    }
+
+    toggleBtn.addEventListener("click", () => {
+        body.classList.toggle("dark");
+
+        if (body.classList.contains("dark")) {
+            toggleBtn.textContent = "Light Mode";
+        } else {
+            toggleBtn.textContent = "Dark Mode";
+            localStorage.setItem("theme", "light");
+        }
+    });
 });
+
