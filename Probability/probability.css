@@ -268,15 +268,6 @@ body.dark h1 {
     opacity: 1;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 1.4rem;
-    }
-    .container {
-        padding: 1.5rem 1rem;
-    }
-}
 
 /* Enhanced Float + Rotate Keyframes */
 @keyframes floatRotate {
@@ -291,23 +282,7 @@ body.dark h1 {
     }
 }
 
-@media (max-width: 600px) {
 
-    h1 {
-        font-size: 1.5rem;
-    }
-    .container {
-        padding: 1.5rem 1rem;
-    }
-
-    button.btn {
-        font-size: 0.95rem;
-    }
-
-    input, select {
-        font-size: 0.95rem;
-    }
-}
 
 /* Form */
 form {
@@ -342,4 +317,49 @@ footer {
     font-size: 1.3rem;
     font-style: italic;
     width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+    .container {
+        padding: 1.5rem 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+    .container {
+        padding: 1.5rem 1rem;
+    }
+
+    button.btn {
+        font-size: 0.95rem;
+    }
+
+    input, select {
+        font-size: 0.95rem;
+    }
+}
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+    .container {
+        padding: 1.5rem 1rem;
+    }
+
+    button.btn {
+        font-size: 0.95rem;
+    }
+
+    input, select {
+        font-size: 0.95rem;
+    }
 }
