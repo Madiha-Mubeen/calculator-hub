@@ -1,13 +1,5 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Bitcount+Prop+Single:wght@100..900&family=Bitcount:wght@100..900&family=DM+Serif+Text:ital@0;1&family=Griffy&family=Kings&family=Nosifer&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+NSW:wght@100..400&family=Quintessential&family=Rouge+Script&display=swap');
- 
-/* Root & Reset */
-:root {
-    --bg: #f4f7fa;
-    --card-bg: #ffffff;
-    --text: #222;
-    --primary: #28a745;
-}
 
 * {
     margin: 0;
@@ -37,6 +29,9 @@ nav {
     width: 100%;
 }
 
+body.dark nav {
+    background: rgb(136, 136, 190);
+}
 nav ul {
     list-style: none;
     flex-direction: column;
@@ -52,6 +47,33 @@ nav ul {
 nav a {
     text-decoration: none;
     color: rgb(16, 16, 99);
+}
+
+h2 {
+    text-align: center;
+    text-decoration: rgb(32, 32, 128) wavy underline;
+    margin-top: 75.1px;
+    color: rgb(36, 36, 161);
+    font-size: 1.7rem;
+}
+
+body.dark h2 {
+    color: rgb(136, 136, 182);
+    text-decoration: rgb(136, 136, 182) wavy underline;
+}
+
+p {
+    color: blue;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 21px;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+body.dark p {
+    color: rgb(148, 148, 241);
 }
 /* Main Layout */
 .container {
@@ -74,6 +96,7 @@ nav a {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
     max-width: 480px;
     position: relative;
+    justify-content: center;
     z-index: 6;
 }
 
@@ -176,18 +199,7 @@ body.dark .subtitle {
     display: block;
 }
 
-/* Responsive */
-@media (max-width: 500px) {
-    .calculate-card {
-        padding: 1.5rem;
-    }
-    .title {
-        font-size: 1.5rem;
-    }
-    .result-box {
-        font-size: 0.95rem;
-    }
-}
+
 
 /* Dark Mode Support */
 body.dark {
@@ -209,7 +221,8 @@ body.dark {
     border: rgb(59, 59, 143) dotted;
     border-radius: 0;
     margin-top: 30px;
-
+    float: right;
+    margin: 15px 40px 0 auto;
     font-size: 0.9rem;
     font-family: 'Playwrite AU NSW', sans-serif;
     cursor: pointer;
@@ -259,4 +272,76 @@ footer {
     text-align: center;
     font-size: 1.1rem;
     font-style: italic;
+}
+
+body.dark footer {
+    background: rgb(136, 136, 190);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .calculate-card {
+        padding: 1.5rem;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+    .result-box {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 700px) {
+    form {
+        width: 90%;
+        padding: 21px;
+    }
+
+    input, select {
+        width: 71%;
+        font-size: 0.91rem;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 1.13rem;
+    }
+
+    #themeToggle {
+        margin: 13px auto;
+        padding: 9px 21px;
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 2.1rem;
+    }
+
+    h2 {
+        font-size: 1.53rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+        padding: 10px 0;
+    }
+
+    .container {
+        width: 85%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        display: flex;
+        gap: 21px;
+        padding: 12px 1px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 13px;
+        font-size: 1.3rem;
+    }
 }
