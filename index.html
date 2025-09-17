@@ -132,27 +132,6 @@
             toggleBtn.title = 'Switch to light mode';
         }
 
-        const cursor = document.querySelector('.cursor');
-        const trail = document.querySelector('.cursor-trail');
-
-        window.addEventListener('mousemove', (e) => {
-            cursor.style.left = trail.style.left = `${e.clientX}px`;
-            cursor.style.top = trail.style.top = `${e.clientY}px`;
-        });
-
-        const cursorDot = document.querySelector('.cursor-dot');
-        const cursorRing = document.querySelector('.cursor-ring');
-
-        window.addEventListener('mousemove', (e) => {
-            cursorDot.style.left = `${e.clientX}px`;
-            cursorDot.style.top = `${e.clientY}px`;
-
-            cursorRing.style.left = `${e.clientX}px`;
-            cursorRing.style.top = `${e.clientY}px`;
-        })
- 
-
-
     </script>
 </body>
 </html>
