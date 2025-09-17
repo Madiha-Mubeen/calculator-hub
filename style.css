@@ -132,10 +132,10 @@ body.dark .open-btn:hover {
 
 body.dark .card {
     background: var(--card-bg-dark);
-    color: #fbfbfc;
+    color: #babaf8;
 }
 body.dark .open-btn {
-    color: #fdfbfb;
+    color: #afbbf3;
 }
 
 #themeToggle {
