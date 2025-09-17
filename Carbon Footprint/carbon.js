@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const totalEmission = carEmission + flightEmission + electricityEmission + wasteEmission + dietEmission;
 
 
-        //show result
+        //showing result
         resultBox.querySelector(".result-text").innerHTML = `
         <strong>${totalEmission.toFixed(2)} kg CO₂/year</strong> is your estimated annual carbon footprint.
         `;
