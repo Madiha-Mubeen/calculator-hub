@@ -20,10 +20,6 @@ body {
 body.dark {
     background: rgb(214, 117, 133);
 }
-html, body {
-    height: 100%;
-    margin: 0;
-}
 
 nav {
     background: rgb(236, 88, 88);
@@ -34,6 +30,7 @@ nav {
     font-size: 1.5rem;
     font-style: italic;
     width: 100%;
+    display: flex;
 }
 
 body.dark nav {
@@ -60,6 +57,35 @@ nav a {
     margin: 15px 40px 0 auto;
     border: yellow dashed;
 }
+
+h2 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: orange;
+    text-decoration: orange wavy underline;
+    margin-top: 21px;
+    margin-bottom: 17px;
+}
+body.dark h2 {
+    color: yellow;
+    text-decoration: yellow wavy underline;
+}
+
+p {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: orange;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+body.dark p {
+    color: yellow;
+}
+
 .container-converter {
     background: rgb(245, 53, 53);
     flex-direction: row;
@@ -120,4 +146,8 @@ footer {
 
 body.dark footer {
     background: rgb(165, 37, 37);
+}
+
+@media (max-width: 600px) {
+
 }
