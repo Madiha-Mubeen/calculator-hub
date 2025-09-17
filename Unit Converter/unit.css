@@ -38,7 +38,7 @@ body.dark nav {
 }
 nav ul {
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
     display: flex;
     list-style: none;
     text-decoration: rgb(206, 158, 68) wavy underline;
