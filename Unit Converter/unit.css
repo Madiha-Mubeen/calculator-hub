@@ -149,5 +149,46 @@ body.dark footer {
 }
 
 @media (max-width: 600px) {
+    nav ul {
+        gap: 27px;
+    }
 
+    h2 {
+        font-size: 1.31rem;
+    }
+    
+    p {
+        font-size: 1.09rem;
+    }
+    
+    #themeToggle {
+        padding: 10px 21px;
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 1.43rem;
+        margin-top: 0;
+        margin-bottom: 1.2rem;
+    }
+
+    label {
+        font-size: 0.98rem;
+    }
+
+    input, select {
+        padding: 5px 7px;
+        margin-bottom: 11px;
+        margin-top: 5px;
+    }
+
+    .container-converter {
+        padding: 11px 21px;
+    }
+
+    footer {
+        font-size: 1.1rem;
+        padding: 11px 21px;
+        margin-top: 21px;
+    }
 }
