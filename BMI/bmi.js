@@ -73,16 +73,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (bmi < 18.5) {
             category = "Underweight";
-            advice = "You are underweight. Consider including more nutrient-rich calories in your diet and consult a dietitian to ensure you're meeting your body's needs.";
+            advice = "Okay so you are underweight. You can consider including more nutrient-rich calories in your diet and consult a dietitian to check & ensure that you're meeting your body's needs.";
         } else if (bmi < 24.9) {
             category = "Normal weight";
-            advice = "Great! You're a healthy weight range. Maintain a balanced diet and stay active to keep up your health.";
+            advice = "Looks Great! You're in a healthy weight range. Maintaining a balanced diet and staying active will keep up your health good.";
         } else if (bmi < 29.9) {
             category = "Overweight";
-            advice = "You're within the overweight range. Consider adopting healthier eating habits and incorporating regular physical activity into your routine.";
+            advice = "Oh looks like, you're within the overweight range. You can consider for adopting the healthier eating habits and adding regular physical activity into your routine will help, try to consult a dietician.";
         } else {
             category = "Obese";
-            advice = "You are in the obese range. It's important to work on weight reduction through a healthy diet, exercise, and possibly guidance from a healthcare provider.";
+            advice = "Oh no you are in the obese range. It's being mandatory to work on the weight loss through a healthy diet, exercise, and yes don't forget to consult a dietician.";
         }
 
 
